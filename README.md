@@ -1,2 +1,2 @@
 # CAcert-CSR
-Windows Tool für die Verwaltung von CAcert Zertifikaten.
+Windows Tool für die Erstellung von CAcert Zertifikaten.
