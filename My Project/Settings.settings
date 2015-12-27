@@ -1,0 +1,90 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="ssl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">C:\OpenSSL-Win64</Value>
+    </Setting>
+    <Setting Name="Country" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AT</Value>
+    </Setting>
+    <Setting Name="State" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="City" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Org" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Dep" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Mail" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Street1" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Street2" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Street3" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Postal" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Password" Type="System.String" Scope="User">
+      <Value Profile="(Default)">testpw</Value>
+    </Setting>
+    <Setting Name="firstRun" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="usrClient" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/account.php?id=3</Value>
+    </Setting>
+    <Setting Name="orgClient" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/account.php?id=16</Value>
+    </Setting>
+    <Setting Name="usrServer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/account.php?id=10</Value>
+    </Setting>
+    <Setting Name="orgServer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/account.php?id=20</Value>
+    </Setting>
+    <Setting Name="actPage" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/account.php?id=3</Value>
+    </Setting>
+    <Setting Name="accLogout" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/account.php?id=logout</Value>
+    </Setting>
+    <Setting Name="accTyp" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Pass</Value>
+    </Setting>
+    <Setting Name="prodPassServer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.cacert.org</Value>
+    </Setting>
+    <Setting Name="prodCertServer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">https://secure.cacert.org</Value>
+    </Setting>
+    <Setting Name="testPassServer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://cacert1.it-sls.de</Value>
+    </Setting>
+    <Setting Name="testCertServer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://cacert1.it-sls.de</Value>
+    </Setting>
+    <Setting Name="accLogin" Type="System.String" Scope="User">
+      <Value Profile="(Default)">/index.php?id=4</Value>
+    </Setting>
+    <Setting Name="accServer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">prod</Value>
+    </Setting>
+    <Setting Name="actServer" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.cacert.org</Value>
+    </Setting>
+    <Setting Name="certPass" Type="System.String" Scope="User">
+      <Value Profile="(Default)">testpw</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
