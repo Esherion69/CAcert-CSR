@@ -77,61 +77,49 @@ Partial Class frmCAcertCSR
         '
         'lblName
         '
-        Me.lblName.AutoSize = True
-        Me.lblName.Location = New System.Drawing.Point(50, 6)
+        resources.ApplyResources(Me.lblName, "lblName")
         Me.lblName.Name = "lblName"
-        Me.lblName.Size = New System.Drawing.Size(0, 13)
-        Me.lblName.TabIndex = 0
         '
         'DateiToolStripMenuItem
         '
         Me.DateiToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BeendenToolStripMenuItem})
         Me.DateiToolStripMenuItem.Name = "DateiToolStripMenuItem"
-        Me.DateiToolStripMenuItem.Size = New System.Drawing.Size(46, 20)
-        Me.DateiToolStripMenuItem.Text = "&Datei"
+        resources.ApplyResources(Me.DateiToolStripMenuItem, "DateiToolStripMenuItem")
         '
         'BeendenToolStripMenuItem
         '
         Me.BeendenToolStripMenuItem.Name = "BeendenToolStripMenuItem"
-        Me.BeendenToolStripMenuItem.Size = New System.Drawing.Size(120, 22)
-        Me.BeendenToolStripMenuItem.Text = "&Beenden"
+        resources.ApplyResources(Me.BeendenToolStripMenuItem, "BeendenToolStripMenuItem")
         '
         'OptionenToolStripMenuItem
         '
         Me.OptionenToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EinstellungenToolStripMenuItem})
         Me.OptionenToolStripMenuItem.Name = "OptionenToolStripMenuItem"
-        Me.OptionenToolStripMenuItem.Size = New System.Drawing.Size(69, 20)
-        Me.OptionenToolStripMenuItem.Text = "&Optionen"
+        resources.ApplyResources(Me.OptionenToolStripMenuItem, "OptionenToolStripMenuItem")
         '
         'EinstellungenToolStripMenuItem
         '
         Me.EinstellungenToolStripMenuItem.Name = "EinstellungenToolStripMenuItem"
-        Me.EinstellungenToolStripMenuItem.Size = New System.Drawing.Size(145, 22)
-        Me.EinstellungenToolStripMenuItem.Text = "&Einstellungen"
+        resources.ApplyResources(Me.EinstellungenToolStripMenuItem, "EinstellungenToolStripMenuItem")
         '
         'HilfeToolStripMenuItem
         '
         Me.HilfeToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InfoToolStripMenuItem})
         Me.HilfeToolStripMenuItem.Name = "HilfeToolStripMenuItem"
-        Me.HilfeToolStripMenuItem.Size = New System.Drawing.Size(44, 20)
-        Me.HilfeToolStripMenuItem.Text = "&Hilfe"
+        resources.ApplyResources(Me.HilfeToolStripMenuItem, "HilfeToolStripMenuItem")
         '
         'InfoToolStripMenuItem
         '
         Me.InfoToolStripMenuItem.Name = "InfoToolStripMenuItem"
-        Me.InfoToolStripMenuItem.Size = New System.Drawing.Size(95, 22)
-        Me.InfoToolStripMenuItem.Text = "Info"
+        resources.ApplyResources(Me.InfoToolStripMenuItem, "InfoToolStripMenuItem")
         '
         'tcCert
         '
         Me.tcCert.Controls.Add(Me.tpCreate)
-        Me.tcCert.Dock = System.Windows.Forms.DockStyle.Fill
+        resources.ApplyResources(Me.tcCert, "tcCert")
         Me.tcCert.HotTrack = True
-        Me.tcCert.Location = New System.Drawing.Point(0, 24)
         Me.tcCert.Name = "tcCert"
         Me.tcCert.SelectedIndex = 0
-        Me.tcCert.Size = New System.Drawing.Size(324, 395)
-        Me.tcCert.TabIndex = 0
         '
         'tpCreate
         '
@@ -156,331 +144,215 @@ Partial Class frmCAcertCSR
         Me.tpCreate.Controls.Add(Me.lblCommon)
         Me.tpCreate.Controls.Add(Me.txtPem)
         Me.tpCreate.Controls.Add(Me.webCAcert)
-        Me.tpCreate.Location = New System.Drawing.Point(4, 22)
+        resources.ApplyResources(Me.tpCreate, "tpCreate")
         Me.tpCreate.Name = "tpCreate"
-        Me.tpCreate.Padding = New System.Windows.Forms.Padding(3)
-        Me.tpCreate.Size = New System.Drawing.Size(316, 369)
-        Me.tpCreate.TabIndex = 0
-        Me.tpCreate.Text = "Erzeugen"
         Me.tpCreate.UseVisualStyleBackColor = True
         '
         'cbCCA
         '
-        Me.cbCCA.AutoSize = True
-        Me.cbCCA.Enabled = False
-        Me.cbCCA.Location = New System.Drawing.Point(146, 225)
+        resources.ApplyResources(Me.cbCCA, "cbCCA")
         Me.cbCCA.Name = "cbCCA"
-        Me.cbCCA.Size = New System.Drawing.Size(47, 17)
-        Me.cbCCA.TabIndex = 13
-        Me.cbCCA.Text = "CCA"
         Me.cbCCA.UseVisualStyleBackColor = True
         '
         'gbArt
         '
         Me.gbArt.Controls.Add(Me.rbServer)
         Me.gbArt.Controls.Add(Me.rbClient)
-        Me.gbArt.Location = New System.Drawing.Point(13, 82)
+        resources.ApplyResources(Me.gbArt, "gbArt")
         Me.gbArt.Name = "gbArt"
-        Me.gbArt.Size = New System.Drawing.Size(298, 45)
-        Me.gbArt.TabIndex = 1
         Me.gbArt.TabStop = False
-        Me.gbArt.Text = "Art"
         '
         'rbServer
         '
-        Me.rbServer.AutoSize = True
-        Me.rbServer.Enabled = False
-        Me.rbServer.Location = New System.Drawing.Point(136, 20)
+        resources.ApplyResources(Me.rbServer, "rbServer")
         Me.rbServer.Name = "rbServer"
-        Me.rbServer.Size = New System.Drawing.Size(56, 17)
-        Me.rbServer.TabIndex = 1
         Me.rbServer.TabStop = True
-        Me.rbServer.Text = "Server"
         Me.rbServer.UseVisualStyleBackColor = True
         '
         'rbClient
         '
-        Me.rbClient.AutoSize = True
-        Me.rbClient.Enabled = False
-        Me.rbClient.Location = New System.Drawing.Point(13, 20)
+        resources.ApplyResources(Me.rbClient, "rbClient")
         Me.rbClient.Name = "rbClient"
-        Me.rbClient.Size = New System.Drawing.Size(51, 17)
-        Me.rbClient.TabIndex = 0
         Me.rbClient.TabStop = True
-        Me.rbClient.Text = "Client"
         Me.rbClient.UseVisualStyleBackColor = True
         '
         'gbTyp
         '
         Me.gbTyp.Controls.Add(Me.rbOrg)
         Me.gbTyp.Controls.Add(Me.rbPrivat)
-        Me.gbTyp.Location = New System.Drawing.Point(12, 31)
+        resources.ApplyResources(Me.gbTyp, "gbTyp")
         Me.gbTyp.Name = "gbTyp"
-        Me.gbTyp.Size = New System.Drawing.Size(299, 45)
-        Me.gbTyp.TabIndex = 0
         Me.gbTyp.TabStop = False
-        Me.gbTyp.Text = "Typ"
         '
         'rbOrg
         '
-        Me.rbOrg.AutoSize = True
-        Me.rbOrg.Enabled = False
-        Me.rbOrg.Location = New System.Drawing.Point(136, 19)
+        resources.ApplyResources(Me.rbOrg, "rbOrg")
         Me.rbOrg.Name = "rbOrg"
-        Me.rbOrg.Size = New System.Drawing.Size(84, 17)
-        Me.rbOrg.TabIndex = 1
         Me.rbOrg.TabStop = True
-        Me.rbOrg.Text = "Organisation"
         Me.rbOrg.UseVisualStyleBackColor = True
         '
         'rbPrivat
         '
-        Me.rbPrivat.AutoSize = True
-        Me.rbPrivat.Enabled = False
-        Me.rbPrivat.Location = New System.Drawing.Point(13, 19)
+        resources.ApplyResources(Me.rbPrivat, "rbPrivat")
         Me.rbPrivat.Name = "rbPrivat"
-        Me.rbPrivat.Size = New System.Drawing.Size(52, 17)
-        Me.rbPrivat.TabIndex = 0
         Me.rbPrivat.TabStop = True
-        Me.rbPrivat.Text = "Privat"
         Me.rbPrivat.UseVisualStyleBackColor = True
         '
         'btnCAcertFin
         '
         Me.btnCAcertFin.BackColor = System.Drawing.Color.Red
-        Me.btnCAcertFin.Enabled = False
-        Me.btnCAcertFin.Location = New System.Drawing.Point(8, 311)
+        resources.ApplyResources(Me.btnCAcertFin, "btnCAcertFin")
         Me.btnCAcertFin.Name = "btnCAcertFin"
-        Me.btnCAcertFin.Size = New System.Drawing.Size(300, 23)
-        Me.btnCAcertFin.TabIndex = 18
-        Me.btnCAcertFin.Text = "Mit CAcert fertigstellen"
         Me.btnCAcertFin.UseVisualStyleBackColor = False
         '
         'lblClass
         '
-        Me.lblClass.AutoSize = True
-        Me.lblClass.Location = New System.Drawing.Point(13, 226)
+        resources.ApplyResources(Me.lblClass, "lblClass")
         Me.lblClass.Name = "lblClass"
-        Me.lblClass.Size = New System.Drawing.Size(38, 13)
-        Me.lblClass.TabIndex = 10
-        Me.lblClass.Text = "Klasse"
         '
         'rbClass3
         '
-        Me.rbClass3.AutoSize = True
+        resources.ApplyResources(Me.rbClass3, "rbClass3")
         Me.rbClass3.Checked = True
-        Me.rbClass3.Enabled = False
-        Me.rbClass3.Location = New System.Drawing.Point(82, 224)
         Me.rbClass3.Name = "rbClass3"
-        Me.rbClass3.Size = New System.Drawing.Size(31, 17)
-        Me.rbClass3.TabIndex = 12
         Me.rbClass3.TabStop = True
         Me.rbClass3.Tag = "2"
-        Me.rbClass3.Text = "3"
         Me.rbClass3.UseVisualStyleBackColor = True
         '
         'rbClass1
         '
-        Me.rbClass1.AutoSize = True
-        Me.rbClass1.Enabled = False
-        Me.rbClass1.Location = New System.Drawing.Point(54, 224)
+        resources.ApplyResources(Me.rbClass1, "rbClass1")
         Me.rbClass1.Name = "rbClass1"
-        Me.rbClass1.Size = New System.Drawing.Size(31, 17)
-        Me.rbClass1.TabIndex = 11
         Me.rbClass1.Tag = "1"
-        Me.rbClass1.Text = "1"
         Me.rbClass1.UseVisualStyleBackColor = True
         '
         'btnAll
         '
-        Me.btnAll.Enabled = False
-        Me.btnAll.Location = New System.Drawing.Point(9, 195)
+        resources.ApplyResources(Me.btnAll, "btnAll")
         Me.btnAll.Name = "btnAll"
-        Me.btnAll.Size = New System.Drawing.Size(85, 23)
-        Me.btnAll.TabIndex = 8
-        Me.btnAll.Text = "Alles Löschen"
         Me.btnAll.UseVisualStyleBackColor = True
         '
         'btnClear
         '
-        Me.btnClear.Enabled = False
-        Me.btnClear.Location = New System.Drawing.Point(9, 166)
+        resources.ApplyResources(Me.btnClear, "btnClear")
         Me.btnClear.Name = "btnClear"
-        Me.btnClear.Size = New System.Drawing.Size(85, 22)
-        Me.btnClear.TabIndex = 7
-        Me.btnClear.Text = "Löschen"
         Me.btnClear.UseVisualStyleBackColor = True
         '
         'btnCACertSave
         '
         Me.btnCACertSave.BackColor = System.Drawing.Color.Red
-        Me.btnCACertSave.Enabled = False
-        Me.btnCACertSave.Location = New System.Drawing.Point(9, 340)
+        resources.ApplyResources(Me.btnCACertSave, "btnCACertSave")
         Me.btnCACertSave.Name = "btnCACertSave"
-        Me.btnCACertSave.Size = New System.Drawing.Size(301, 23)
-        Me.btnCACertSave.TabIndex = 0
-        Me.btnCACertSave.Text = "Von CAcert in Datei speichern"
         Me.btnCACertSave.UseVisualStyleBackColor = False
         '
         'btnCAcertSig
         '
         Me.btnCAcertSig.BackColor = System.Drawing.Color.Red
-        Me.btnCAcertSig.Enabled = False
-        Me.btnCAcertSig.Location = New System.Drawing.Point(8, 282)
+        resources.ApplyResources(Me.btnCAcertSig, "btnCAcertSig")
         Me.btnCAcertSig.Name = "btnCAcertSig"
-        Me.btnCAcertSig.Size = New System.Drawing.Size(300, 23)
-        Me.btnCAcertSig.TabIndex = 16
-        Me.btnCAcertSig.Text = "Mit CAcert signieren"
         Me.btnCAcertSig.UseVisualStyleBackColor = False
         '
         'txtCSR
         '
-        Me.txtCSR.Location = New System.Drawing.Point(316, 5)
-        Me.txtCSR.Multiline = True
+        resources.ApplyResources(Me.txtCSR, "txtCSR")
         Me.txtCSR.Name = "txtCSR"
         Me.txtCSR.ReadOnly = True
-        Me.txtCSR.Size = New System.Drawing.Size(376, 358)
-        Me.txtCSR.TabIndex = 27
         '
         'btnGenerate
         '
         Me.btnGenerate.BackColor = System.Drawing.Color.Red
-        Me.btnGenerate.Enabled = False
-        Me.btnGenerate.Location = New System.Drawing.Point(9, 253)
+        resources.ApplyResources(Me.btnGenerate, "btnGenerate")
         Me.btnGenerate.Name = "btnGenerate"
-        Me.btnGenerate.Size = New System.Drawing.Size(300, 23)
-        Me.btnGenerate.TabIndex = 18
-        Me.btnGenerate.Text = "CSR erstellen"
         Me.btnGenerate.UseVisualStyleBackColor = False
         '
         'btnMinus
         '
-        Me.btnMinus.Enabled = False
-        Me.btnMinus.Location = New System.Drawing.Point(100, 195)
+        resources.ApplyResources(Me.btnMinus, "btnMinus")
         Me.btnMinus.Name = "btnMinus"
-        Me.btnMinus.Size = New System.Drawing.Size(40, 23)
-        Me.btnMinus.TabIndex = 6
-        Me.btnMinus.Text = "-"
         Me.btnMinus.UseVisualStyleBackColor = True
         '
         'btnPlus
         '
-        Me.btnPlus.Enabled = False
-        Me.btnPlus.Location = New System.Drawing.Point(100, 165)
+        resources.ApplyResources(Me.btnPlus, "btnPlus")
         Me.btnPlus.Name = "btnPlus"
-        Me.btnPlus.Size = New System.Drawing.Size(40, 23)
-        Me.btnPlus.TabIndex = 5
-        Me.btnPlus.Text = "+"
         Me.btnPlus.UseVisualStyleBackColor = True
         '
         'lblNamen
         '
-        Me.lblNamen.AutoSize = True
-        Me.lblNamen.Location = New System.Drawing.Point(5, 149)
+        resources.ApplyResources(Me.lblNamen, "lblNamen")
         Me.lblNamen.Name = "lblNamen"
-        Me.lblNamen.Size = New System.Drawing.Size(89, 13)
-        Me.lblNamen.TabIndex = 4
-        Me.lblNamen.Text = "Weitere Nammen"
         '
         'lstNamen
         '
-        Me.lstNamen.Enabled = False
+        resources.ApplyResources(Me.lstNamen, "lstNamen")
         Me.lstNamen.FormattingEnabled = True
-        Me.lstNamen.Location = New System.Drawing.Point(146, 149)
         Me.lstNamen.Name = "lstNamen"
-        Me.lstNamen.Size = New System.Drawing.Size(163, 69)
-        Me.lstNamen.TabIndex = 9
         '
         'txtCommon
         '
-        Me.txtCommon.Location = New System.Drawing.Point(102, 5)
+        resources.ApplyResources(Me.txtCommon, "txtCommon")
         Me.txtCommon.Name = "txtCommon"
-        Me.txtCommon.Size = New System.Drawing.Size(209, 20)
-        Me.txtCommon.TabIndex = 3
         '
         'lblCommon
         '
-        Me.lblCommon.AutoSize = True
-        Me.lblCommon.Location = New System.Drawing.Point(8, 8)
+        resources.ApplyResources(Me.lblCommon, "lblCommon")
         Me.lblCommon.Name = "lblCommon"
-        Me.lblCommon.Size = New System.Drawing.Size(92, 13)
-        Me.lblCommon.TabIndex = 2
-        Me.lblCommon.Text = "Allgemeiner Name"
         '
         'txtPem
         '
-        Me.txtPem.Location = New System.Drawing.Point(698, 6)
-        Me.txtPem.Multiline = True
+        resources.ApplyResources(Me.txtPem, "txtPem")
         Me.txtPem.Name = "txtPem"
         Me.txtPem.ReadOnly = True
-        Me.txtPem.Size = New System.Drawing.Size(359, 357)
-        Me.txtPem.TabIndex = 30
         '
         'webCAcert
         '
-        Me.webCAcert.Location = New System.Drawing.Point(8, 369)
-        Me.webCAcert.MinimumSize = New System.Drawing.Size(20, 20)
+        resources.ApplyResources(Me.webCAcert, "webCAcert")
         Me.webCAcert.Name = "webCAcert"
-        Me.webCAcert.Size = New System.Drawing.Size(1051, 198)
-        Me.webCAcert.TabIndex = 33
         Me.webCAcert.Url = New System.Uri("", System.UriKind.Relative)
         '
         'Label1
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(7, 68)
+        resources.ApplyResources(Me.Label1, "Label1")
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(89, 13)
-        Me.Label1.TabIndex = 23
-        Me.Label1.Text = "Weitere Nammen"
         '
         'MenuStrip
         '
         Me.MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DateiToolStripMenuItem1, Me.OptionToolStripMenuItem, Me.HilfeToolStripMenuItem1})
-        Me.MenuStrip.Location = New System.Drawing.Point(0, 0)
+        resources.ApplyResources(Me.MenuStrip, "MenuStrip")
         Me.MenuStrip.Name = "MenuStrip"
-        Me.MenuStrip.Size = New System.Drawing.Size(324, 24)
-        Me.MenuStrip.TabIndex = 23
-        Me.MenuStrip.Text = "MenuStrip1"
         '
         'DateiToolStripMenuItem1
         '
         Me.DateiToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BeendenToolStripMenuItem1})
         Me.DateiToolStripMenuItem1.Name = "DateiToolStripMenuItem1"
-        Me.DateiToolStripMenuItem1.Size = New System.Drawing.Size(46, 20)
-        Me.DateiToolStripMenuItem1.Text = "&Datei"
+        resources.ApplyResources(Me.DateiToolStripMenuItem1, "DateiToolStripMenuItem1")
         '
         'BeendenToolStripMenuItem1
         '
         Me.BeendenToolStripMenuItem1.Name = "BeendenToolStripMenuItem1"
-        Me.BeendenToolStripMenuItem1.Size = New System.Drawing.Size(120, 22)
-        Me.BeendenToolStripMenuItem1.Text = "&Beenden"
+        resources.ApplyResources(Me.BeendenToolStripMenuItem1, "BeendenToolStripMenuItem1")
         '
         'OptionToolStripMenuItem
         '
         Me.OptionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EinstellungenToolStripMenuItem1})
         Me.OptionToolStripMenuItem.Name = "OptionToolStripMenuItem"
-        Me.OptionToolStripMenuItem.Size = New System.Drawing.Size(56, 20)
-        Me.OptionToolStripMenuItem.Text = "&Option"
+        resources.ApplyResources(Me.OptionToolStripMenuItem, "OptionToolStripMenuItem")
         '
         'EinstellungenToolStripMenuItem1
         '
         Me.EinstellungenToolStripMenuItem1.Name = "EinstellungenToolStripMenuItem1"
-        Me.EinstellungenToolStripMenuItem1.Size = New System.Drawing.Size(145, 22)
-        Me.EinstellungenToolStripMenuItem1.Text = "&Einstellungen"
+        resources.ApplyResources(Me.EinstellungenToolStripMenuItem1, "EinstellungenToolStripMenuItem1")
         '
         'HilfeToolStripMenuItem1
         '
         Me.HilfeToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.InfoToolStripMenuItem1})
         Me.HilfeToolStripMenuItem1.Name = "HilfeToolStripMenuItem1"
-        Me.HilfeToolStripMenuItem1.Size = New System.Drawing.Size(44, 20)
-        Me.HilfeToolStripMenuItem1.Text = "&Hilfe"
+        resources.ApplyResources(Me.HilfeToolStripMenuItem1, "HilfeToolStripMenuItem1")
         '
         'InfoToolStripMenuItem1
         '
         Me.InfoToolStripMenuItem1.Name = "InfoToolStripMenuItem1"
-        Me.InfoToolStripMenuItem1.Size = New System.Drawing.Size(95, 22)
-        Me.InfoToolStripMenuItem1.Text = "&Info"
+        resources.ApplyResources(Me.InfoToolStripMenuItem1, "InfoToolStripMenuItem1")
         '
         'Timer1
         '
@@ -488,16 +360,13 @@ Partial Class frmCAcertCSR
         '
         'frmCAcertCSR
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(324, 419)
         Me.Controls.Add(Me.tcCert)
         Me.Controls.Add(Me.lblName)
         Me.Controls.Add(Me.MenuStrip)
-        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
         Me.Name = "frmCAcertCSR"
-        Me.Text = "CAcert - CSR"
         Me.tcCert.ResumeLayout(False)
         Me.tpCreate.ResumeLayout(False)
         Me.tpCreate.PerformLayout()

@@ -117,10 +117,605 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btnOK.Location" type="System.Drawing.Point, System.Drawing">
+    <value>380, 277</value>
+  </data>
+  <data name="btnOK.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 23</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btnOK.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="btnOK.Text" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Name" xml:space="preserve">
+    <value>btnOK</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnOK.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;btnOK.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
   <metadata name="fbdSettings.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="fbdSettings.SelectedPath" xml:space="preserve">
+    <value>c:\</value>
+  </data>
+  <data name="lblProdPassServ.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblProdPassServ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 9</value>
+  </data>
+  <data name="lblProdPassServ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 13</value>
+  </data>
+  <data name="lblProdPassServ.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lblProdPassServ.Text" xml:space="preserve">
+    <value>Produktiv Server (Passwort)</value>
+  </data>
+  <data name="&gt;&gt;lblProdPassServ.Name" xml:space="preserve">
+    <value>lblProdPassServ</value>
+  </data>
+  <data name="&gt;&gt;lblProdPassServ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblProdPassServ.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblProdPassServ.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="lblTestPassServ.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblTestPassServ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 61</value>
+  </data>
+  <data name="lblTestPassServ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>114, 13</value>
+  </data>
+  <data name="lblTestPassServ.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblTestPassServ.Text" xml:space="preserve">
+    <value>Test Server (Passwort)</value>
+  </data>
+  <data name="&gt;&gt;lblTestPassServ.Name" xml:space="preserve">
+    <value>lblTestPassServ</value>
+  </data>
+  <data name="&gt;&gt;lblTestPassServ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTestPassServ.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblTestPassServ.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="txtProdPassServ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 6</value>
+  </data>
+  <data name="txtProdPassServ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 20</value>
+  </data>
+  <data name="txtProdPassServ.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtProdPassServ.Name" xml:space="preserve">
+    <value>txtProdPassServ</value>
+  </data>
+  <data name="&gt;&gt;txtProdPassServ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtProdPassServ.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtProdPassServ.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="txtTestPassServ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 58</value>
+  </data>
+  <data name="txtTestPassServ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 20</value>
+  </data>
+  <data name="txtTestPassServ.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;txtTestPassServ.Name" xml:space="preserve">
+    <value>txtTestPassServ</value>
+  </data>
+  <data name="&gt;&gt;txtTestPassServ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtTestPassServ.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtTestPassServ.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="lblUserClient.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblUserClient.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 113</value>
+  </data>
+  <data name="lblUserClient.Size" type="System.Drawing.Size, System.Drawing">
+    <value>78, 13</value>
+  </data>
+  <data name="lblUserClient.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblUserClient.Text" xml:space="preserve">
+    <value>Benutzer Client</value>
+  </data>
+  <data name="&gt;&gt;lblUserClient.Name" xml:space="preserve">
+    <value>lblUserClient</value>
+  </data>
+  <data name="&gt;&gt;lblUserClient.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblUserClient.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblUserClient.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="lblOrgClient.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblOrgClient.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 139</value>
+  </data>
+  <data name="lblOrgClient.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 13</value>
+  </data>
+  <data name="lblOrgClient.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblOrgClient.Text" xml:space="preserve">
+    <value>Organisation Client</value>
+  </data>
+  <data name="&gt;&gt;lblOrgClient.Name" xml:space="preserve">
+    <value>lblOrgClient</value>
+  </data>
+  <data name="&gt;&gt;lblOrgClient.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblOrgClient.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblOrgClient.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="lblUserServer.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblUserServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 165</value>
+  </data>
+  <data name="lblUserServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>83, 13</value>
+  </data>
+  <data name="lblUserServer.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="lblUserServer.Text" xml:space="preserve">
+    <value>Benutzer Server</value>
+  </data>
+  <data name="&gt;&gt;lblUserServer.Name" xml:space="preserve">
+    <value>lblUserServer</value>
+  </data>
+  <data name="&gt;&gt;lblUserServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblUserServer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblUserServer.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="lblOrgServer.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblOrgServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 191</value>
+  </data>
+  <data name="lblOrgServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 13</value>
+  </data>
+  <data name="lblOrgServer.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="lblOrgServer.Text" xml:space="preserve">
+    <value>Organisation Server</value>
+  </data>
+  <data name="&gt;&gt;lblOrgServer.Name" xml:space="preserve">
+    <value>lblOrgServer</value>
+  </data>
+  <data name="&gt;&gt;lblOrgServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblOrgServer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblOrgServer.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="txtUserClient.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 110</value>
+  </data>
+  <data name="txtUserClient.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 20</value>
+  </data>
+  <data name="txtUserClient.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txtUserClient.Name" xml:space="preserve">
+    <value>txtUserClient</value>
+  </data>
+  <data name="&gt;&gt;txtUserClient.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtUserClient.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtUserClient.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="txtOrgClient.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 136</value>
+  </data>
+  <data name="txtOrgClient.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 20</value>
+  </data>
+  <data name="txtOrgClient.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;txtOrgClient.Name" xml:space="preserve">
+    <value>txtOrgClient</value>
+  </data>
+  <data name="&gt;&gt;txtOrgClient.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtOrgClient.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtOrgClient.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="txtUserServ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 162</value>
+  </data>
+  <data name="txtUserServ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 20</value>
+  </data>
+  <data name="txtUserServ.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;txtUserServ.Name" xml:space="preserve">
+    <value>txtUserServ</value>
+  </data>
+  <data name="&gt;&gt;txtUserServ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtUserServ.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtUserServ.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="txtOrgServer.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 188</value>
+  </data>
+  <data name="txtOrgServer.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 20</value>
+  </data>
+  <data name="txtOrgServer.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;txtOrgServer.Name" xml:space="preserve">
+    <value>txtOrgServer</value>
+  </data>
+  <data name="&gt;&gt;txtOrgServer.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtOrgServer.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtOrgServer.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="rbCertificate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbCertificate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>102, 19</value>
+  </data>
+  <data name="rbCertificate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 17</value>
+  </data>
+  <data name="rbCertificate.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="rbCertificate.Text" xml:space="preserve">
+    <value>Zertifikat</value>
+  </data>
+  <data name="&gt;&gt;rbCertificate.Name" xml:space="preserve">
+    <value>rbCertificate</value>
+  </data>
+  <data name="&gt;&gt;rbCertificate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbCertificate.Parent" xml:space="preserve">
+    <value>gbLogin</value>
+  </data>
+  <data name="&gt;&gt;rbCertificate.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="rbPassword.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rbPassword.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 19</value>
+  </data>
+  <data name="rbPassword.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 17</value>
+  </data>
+  <data name="rbPassword.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="rbPassword.Text" xml:space="preserve">
+    <value>Passwort</value>
+  </data>
+  <data name="&gt;&gt;rbPassword.Name" xml:space="preserve">
+    <value>rbPassword</value>
+  </data>
+  <data name="&gt;&gt;rbPassword.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;rbPassword.Parent" xml:space="preserve">
+    <value>gbLogin</value>
+  </data>
+  <data name="&gt;&gt;rbPassword.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gbLogin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 266</value>
+  </data>
+  <data name="gbLogin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>174, 44</value>
+  </data>
+  <data name="gbLogin.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="gbLogin.Text" xml:space="preserve">
+    <value>Anmelden mit</value>
+  </data>
+  <data name="&gt;&gt;gbLogin.Name" xml:space="preserve">
+    <value>gbLogin</value>
+  </data>
+  <data name="&gt;&gt;gbLogin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbLogin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gbLogin.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="txtProdCertServ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 32</value>
+  </data>
+  <data name="txtProdCertServ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 20</value>
+  </data>
+  <data name="txtProdCertServ.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;txtProdCertServ.Name" xml:space="preserve">
+    <value>txtProdCertServ</value>
+  </data>
+  <data name="&gt;&gt;txtProdCertServ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtProdCertServ.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtProdCertServ.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="lblProdCertServ.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblProdCertServ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 35</value>
+  </data>
+  <data name="lblProdCertServ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>136, 13</value>
+  </data>
+  <data name="lblProdCertServ.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="lblProdCertServ.Text" xml:space="preserve">
+    <value>Produktiv Server (Zertifikat)</value>
+  </data>
+  <data name="&gt;&gt;lblProdCertServ.Name" xml:space="preserve">
+    <value>lblProdCertServ</value>
+  </data>
+  <data name="&gt;&gt;lblProdCertServ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblProdCertServ.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblProdCertServ.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="txtTestCertServ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 84</value>
+  </data>
+  <data name="txtTestCertServ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 20</value>
+  </data>
+  <data name="txtTestCertServ.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;txtTestCertServ.Name" xml:space="preserve">
+    <value>txtTestCertServ</value>
+  </data>
+  <data name="&gt;&gt;txtTestCertServ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtTestCertServ.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtTestCertServ.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblTestCertServ.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblTestCertServ.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 87</value>
+  </data>
+  <data name="lblTestCertServ.Size" type="System.Drawing.Size, System.Drawing">
+    <value>112, 13</value>
+  </data>
+  <data name="lblTestCertServ.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="lblTestCertServ.Text" xml:space="preserve">
+    <value>Test Server (Zertifikat)</value>
+  </data>
+  <data name="&gt;&gt;lblTestCertServ.Name" xml:space="preserve">
+    <value>lblTestCertServ</value>
+  </data>
+  <data name="&gt;&gt;lblTestCertServ.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTestCertServ.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblTestCertServ.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="txtAccLogout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 240</value>
+  </data>
+  <data name="txtAccLogout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 20</value>
+  </data>
+  <data name="txtAccLogout.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;txtAccLogout.Name" xml:space="preserve">
+    <value>txtAccLogout</value>
+  </data>
+  <data name="&gt;&gt;txtAccLogout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtAccLogout.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtAccLogout.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtAccLogin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>153, 214</value>
+  </data>
+  <data name="txtAccLogin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>310, 20</value>
+  </data>
+  <data name="txtAccLogin.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;txtAccLogin.Name" xml:space="preserve">
+    <value>txtAccLogin</value>
+  </data>
+  <data name="&gt;&gt;txtAccLogin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtAccLogin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;txtAccLogin.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblAccLogout.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblAccLogout.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 243</value>
+  </data>
+  <data name="lblAccLogout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>40, 13</value>
+  </data>
+  <data name="lblAccLogout.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="lblAccLogout.Text" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="&gt;&gt;lblAccLogout.Name" xml:space="preserve">
+    <value>lblAccLogout</value>
+  </data>
+  <data name="&gt;&gt;lblAccLogout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblAccLogout.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblAccLogout.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblAccLogin.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblAccLogin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 217</value>
+  </data>
+  <data name="lblAccLogin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>33, 13</value>
+  </data>
+  <data name="lblAccLogin.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="lblAccLogin.Text" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="&gt;&gt;lblAccLogin.Name" xml:space="preserve">
+    <value>lblAccLogin</value>
+  </data>
+  <data name="&gt;&gt;lblAccLogin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblAccLogin.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblAccLogin.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>473, 314</value>
+  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAEAYGAAAAAAGACocAAAFgAAACgAAABgAAAAwAAAAAEAGAAAAAAAAGwAAAAAAAAAAAAAAAAAAAAA
@@ -606,5 +1201,20 @@
         ////////////////////////////////////////////////////////////////////////////////
         //8=
 </value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Erweiterte Einstellungen</value>
+  </data>
+  <data name="&gt;&gt;fbdSettings.Name" xml:space="preserve">
+    <value>fbdSettings</value>
+  </data>
+  <data name="&gt;&gt;fbdSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FolderBrowserDialog, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmInitExtend</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
 </root>
