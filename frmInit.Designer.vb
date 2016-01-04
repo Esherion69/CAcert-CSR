@@ -428,7 +428,7 @@ Partial Class frmInit
         Me.Controls.Add(Me.btnOK)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmInit"
-        Me.Text = "frmInit"
+        Me.Text = "Einstellungen"
         Me.gbServer.ResumeLayout(False)
         Me.gbServer.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)

@@ -142,7 +142,7 @@ Public Class frmCAcertCSR
                     "[ v3_ca ]" & vbCrLf &
                     "subjectKeyIdentifier = hash" & vbCrLf &
                     "authorityKeyIdentifier = keyid : always, issuer : always()" & vbCrLf &
-                    IIf(gbArt.Tag.ToString = "rbClient", "basicConstraints = CA:false", "basicConstraints = CA:true").ToString & vbCrLf &
+                    IIf(gbArt.Tag.ToString = "Client", "basicConstraints = CA:false", "basicConstraints = CA:true").ToString & vbCrLf &
                     "" & vbCrLf &
                     "subjectAltName	= @alt_names" & vbCrLf &
                     "" & vbCrLf &
@@ -173,21 +173,21 @@ Public Class frmCAcertCSR
             btnCAcertSig.Enabled = True
             Me.AcceptButton = btnCAcertSig
 
-            My.Settings.actServer = My.Settings(My.Settings.accServer & My.Settings.accTyp & "Server").ToString
+            My.Settings.actServer =My.Settings.accServer & My.Settings.accTyp & gbArt.Tag.ToString
 
             Select Case gbTyp.Tag.ToString
                 Case "rbPrivat"
                     Select Case gbArt.Tag.ToString
-                        Case "rbClient"
+                        Case "Client"
                             My.Settings.actPage = My.Settings.usrClient
-                        Case "rbServer"
+                        Case "Server"
                             My.Settings.actPage = My.Settings.usrServer
                     End Select
                 Case "rbOrg"
                     Select Case gbArt.Tag.ToString
-                        Case "rbClient"
+                        Case "Client"
                             My.Settings.actPage = My.Settings.orgClient
-                        Case "rbServer"
+                        Case "Server"
                             My.Settings.actPage = My.Settings.orgServer
                     End Select
             End Select
@@ -256,8 +256,10 @@ Public Class frmCAcertCSR
                     Exit Select
                 Case "CSR Eingabe"
                     Debug.Print("Dokument: " & strWo & " komplett geladen.")
+
                     myForm.Radiobox("rootcert", IIf(rbClass1.Checked, rbClass1.Tag.ToString, rbClass3.Tag.ToString).ToString)
                     If gbArt.Tag.ToString = "Client" Then
+                        myForm.Checkbox("expertbox", True)
                         myForm.InnerText("optionalCSR", txtCSR.Text)
                     Else
                         myForm.InnerText("CSR", txtCSR.Text)
@@ -344,11 +346,11 @@ Public Class frmCAcertCSR
     End Sub
 
     Private Sub Art_CheckedChanged(sender As Object, e As EventArgs) Handles rbClient.CheckedChanged, rbServer.CheckedChanged
-        If rbClient.Checked Then
-            MsgBox("Wurde noch nicht umgesetzt." & vbCrLf & "Stelle auf Server um.")
-            rbServer.Checked = True
-            Exit Sub
-        End If
+        'If rbClient.Checked Then
+        '    MsgBox("Wurde noch nicht umgesetzt." & vbCrLf & "Stelle auf Server um.")
+        '    rbServer.Checked = True
+        '    Exit Sub
+        'End If
         If rbClient.Checked Or rbServer.Checked Then
             btnAll.Enabled = True
             btnClear.Enabled = True

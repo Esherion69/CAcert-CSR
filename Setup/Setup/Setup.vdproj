@@ -21,6 +21,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_85E54FBDEB5A475EB3EFA2E07AAE29DB"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_8CF2FF71743044E9B921F930F0B048E8"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -88,6 +94,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.5"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.5 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.5"
+                    }
+                }
             }
         }
     }
@@ -118,6 +132,26 @@
         }
         "File"
         {
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_85E54FBDEB5A475EB3EFA2E07AAE29DB"
+            {
+            "SourcePath" = "8:..\\..\\Lizenz.rtf"
+            "TargetName" = "8:Lizenz.rtf"
+            "Tag" = "8:"
+            "Folder" = "8:_93AB3906D3D84557A765C32A555A26BD"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:TRUE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8CF2FF71743044E9B921F930F0B048E8"
             {
             "SourcePath" = "8:..\\..\\Resources\\CAcertCSRIcon.ico"
@@ -187,15 +221,26 @@
             "Property" = "8:AppDataFolder"
                 "Folders"
                 {
-                    "{9EF0B969-E518-4E46-987F-47570745A589}:_3CBDDC2E065248968B5DCA6AC90A3DAA"
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_82097BB22F1949B28860EB46483D3C91"
                     {
-                    "Name" = "8:Certs"
-                    "AlwaysCreate" = "11:TRUE"
+                    "Name" = "8:[MANUFACTOR]"
+                    "AlwaysCreate" = "11:FALSE"
                     "Condition" = "8:"
-                    "Transitive" = "11:TRUE"
-                    "Property" = "8:_56DDC8EAC8AB4B6DB131BF6207262E8B"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_920310B12B904AF5A85A4DC68589460D"
                         "Folders"
                         {
+                            "{9EF0B969-E518-4E46-987F-47570745A589}:_C6606DF46E4349A9B9139901108B441F"
+                            {
+                            "Name" = "8:Certs"
+                            "AlwaysCreate" = "11:TRUE"
+                            "Condition" = "8:"
+                            "Transitive" = "11:TRUE"
+                            "Property" = "8:_56DDC8EAC8AB4B6DB131BF6207262E8B"
+                                "Folders"
+                                {
+                                }
+                            }
                         }
                     }
                 }
@@ -215,9 +260,9 @@
         "Product"
         {
         "Name" = "8:Microsoft Visual Studio"
-        "ProductName" = "8:caCert-CSR"
+        "ProductName" = "8:CAcert-CSR"
         "ProductCode" = "8:{2B9F271E-49F8-4563-943D-CCAF3455A8C8}"
-        "PackageCode" = "8:{CD9961D3-038D-4FB8-B8EE-1B4B69766CE5}"
+        "PackageCode" = "8:{9D119121-BF00-46F3-9FD5-D754549EB633}"
         "UpgradeCode" = "8:{FB904460-EED7-4D9C-8E1D-840CF4DACD1A}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -226,14 +271,14 @@
         "InstallAllUsers" = "11:TRUE"
         "ProductVersion" = "8:1.0.0"
         "Manufacturer" = "8:Andreas Terpotiz"
-        "ARPHELPTELEPHONE" = "8:"
-        "ARPHELPLINK" = "8:"
-        "Title" = "8:caCert-CSR Setup"
+        "ARPHELPTELEPHONE" = "8:+43.676.88809752"
+        "ARPHELPLINK" = "8:http://www.terpotiz.net"
+        "Title" = "8:CAcert-CSR Setup"
         "Subject" = "8:"
         "ARPCONTACT" = "8:Andreas Terpotiz"
         "Keywords" = "8:"
-        "ARPCOMMENTS" = "8:caCert Verwaltungs Tool"
-        "ARPURLINFOABOUT" = "8:"
+        "ARPCOMMENTS" = "8:CAcert Verwaltungs Tool"
+        "ARPURLINFOABOUT" = "8:http://www.terpotiz.net"
         "ARPPRODUCTICON" = "8:_8CF2FF71743044E9B921F930F0B048E8"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
@@ -375,9 +420,56 @@
             "Attributes" = "3:1"
                 "Dialogs"
                 {
-                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_7E6D4C8D37C445CFA0CF92A91C0D7B53"
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_20EDE53BD81143F59F2D183E05AD8067"
                     {
                     "Sequence" = "3:200"
+                    "DisplayName" = "8:Lizenzvertrag"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdLicenseDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "EulaText"
+                            {
+                            "Name" = "8:EulaText"
+                            "DisplayName" = "8:#1008"
+                            "Description" = "8:#1108"
+                            "Type" = "3:6"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:2"
+                            "Value" = "8:_85E54FBDEB5A475EB3EFA2E07AAE29DB"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "Sunken"
+                            {
+                            "Name" = "8:Sunken"
+                            "DisplayName" = "8:#1007"
+                            "Description" = "8:#1107"
+                            "Type" = "3:5"
+                            "ContextData" = "8:4;True=4;False=0"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:0"
+                            "Value" = "3:4"
+                            "DefaultValue" = "3:4"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_7E6D4C8D37C445CFA0CF92A91C0D7B53"
+                    {
+                    "Sequence" = "3:300"
                     "DisplayName" = "8:Installationsordner"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
@@ -412,7 +504,7 @@
                     }
                     "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_B3A7D08A4B374F0DB63B51176E84BD61"
                     {
-                    "Sequence" = "3:300"
+                    "Sequence" = "3:400"
                     "DisplayName" = "8:Installation bestätigen"
                     "UseDynamicProperties" = "11:TRUE"
                     "IsDependency" = "11:FALSE"
@@ -577,6 +669,53 @@
                             "Setting" = "3:1"
                             "Value" = "8:#1203"
                             "DefaultValue" = "8:#1203"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                        }
+                    }
+                    "{688940B3-5CA9-4162-8DEE-2993FA9D8CBC}:_CED9034C926E456381A6739D30AE392D"
+                    {
+                    "Sequence" = "3:110"
+                    "DisplayName" = "8:Lizenzvertrag"
+                    "UseDynamicProperties" = "11:TRUE"
+                    "IsDependency" = "11:FALSE"
+                    "SourcePath" = "8:<VsdDialogDir>\\VsdAdminLicenseDlg.wid"
+                        "Properties"
+                        {
+                            "BannerBitmap"
+                            {
+                            "Name" = "8:BannerBitmap"
+                            "DisplayName" = "8:#1001"
+                            "Description" = "8:#1101"
+                            "Type" = "3:8"
+                            "ContextData" = "8:Bitmap"
+                            "Attributes" = "3:4"
+                            "Setting" = "3:1"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "EulaText"
+                            {
+                            "Name" = "8:EulaText"
+                            "DisplayName" = "8:#1008"
+                            "Description" = "8:#1108"
+                            "Type" = "3:6"
+                            "ContextData" = "8:"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:2"
+                            "Value" = "8:_85E54FBDEB5A475EB3EFA2E07AAE29DB"
+                            "UsePlugInResources" = "11:TRUE"
+                            }
+                            "Sunken"
+                            {
+                            "Name" = "8:Sunken"
+                            "DisplayName" = "8:#1007"
+                            "Description" = "8:#1107"
+                            "Type" = "3:5"
+                            "ContextData" = "8:4;True=4;False=0"
+                            "Attributes" = "3:0"
+                            "Setting" = "3:0"
+                            "Value" = "3:4"
+                            "DefaultValue" = "3:4"
                             "UsePlugInResources" = "11:TRUE"
                             }
                         }

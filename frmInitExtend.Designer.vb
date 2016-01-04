@@ -287,7 +287,7 @@ Partial Class frmInitExtend
         Me.Controls.Add(Me.btnOK)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmInitExtend"
-        Me.Text = "frmInit"
+        Me.Text = "Erweiterte Einstellungen"
         Me.gbLogin.ResumeLayout(False)
         Me.gbLogin.PerformLayout()
         Me.ResumeLayout(False)
