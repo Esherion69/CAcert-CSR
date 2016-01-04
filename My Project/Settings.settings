@@ -86,5 +86,8 @@
     <Setting Name="certPass" Type="System.String" Scope="User">
       <Value Profile="(Default)">testpw</Value>
     </Setting>
+    <Setting Name="DataDir" Type="System.String" Scope="User">
+      <Value Profile="(Default)">\Andreas_Terpotiz</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

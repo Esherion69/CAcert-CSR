@@ -98,20 +98,22 @@ Public Class frmCAcertCSR
     End Function
 
     Private Sub btnGenerate_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnGenerate.Click
+        Dim filePath As String
+
         If txtCommon.Text <> "" Then
             btnCAcertSig.BackColor = Color.Yellow
             Application.DoEvents() 'Zeigt die Farbe auch an
 
             'Löschen aller vorhanden Zertifikatsdateien
 
-            DelFileOnExist("openssl.cfg")
-            DelFileOnExist("cacert.key")
-            DelFileOnExist("cacert.csr")
-            DelFileOnExist("cacert.crt")
+            DelFileOnExist(Environ("LOCALAPPDATA") & My.Settings.DataDir & "\openssl.cfg")
+            DelFileOnExist(Environ("LOCALAPPDATA") & My.Settings.DataDir & "\cacert.key")
+            DelFileOnExist(Environ("LOCALAPPDATA") & My.Settings.DataDir & "\cacert.csr")
+            DelFileOnExist(Environ("LOCALAPPDATA") & My.Settings.DataDir & "\cacert.crt")
 
             Dim ascii As Encoding = Encoding.ASCII
             Dim file As System.IO.StreamWriter
-            file = My.Computer.FileSystem.OpenTextFileWriter("openssl.cfg", False, ascii)
+            file = My.Computer.FileSystem.OpenTextFileWriter(Environ("LOCALAPPDATA") & My.Settings.DataDir & "\openssl.cfg", False, ascii)
             Dim strText As String = ""
             strText = "[ req ]" & vbCrLf &
                     "prompt = no" & vbCrLf &
@@ -160,20 +162,23 @@ Public Class frmCAcertCSR
             Next
             file.Close()
 
-            Shell(My.Settings.ssl & "\bin\openssl.exe genrsa -out cacert.key 2048 -config openssl.cfg", AppWinStyle.Hide, True, 6000)
+            filePath = My.Settings.ssl & "\bin\openssl.exe genrsa -out " & Chr(34) & Environ("LOCALAPPDATA") & My.Settings.DataDir & "\cacert.key" & Chr(34) & " 2048 -config " & Chr(34) & Environ("LOCALAPPDATA") & My.Settings.DataDir & "\openssl.cfg" & Chr(34)
+            Shell(filePath, AppWinStyle.Hide, True, 6000)
 
-            Shell(My.Settings.ssl & "\bin\openssl.exe req -new -out cacert.csr -key cacert.key -config openssl.cfg", AppWinStyle.Hide, True, -1)
+            filePath = My.Settings.ssl & "\bin\openssl.exe req -new -out " & Chr(34) & Environ("LOCALAPPDATA") & My.Settings.DataDir & "\cacert.csr" & Chr(34) & " -key " & Chr(34) & Environ("LOCALAPPDATA") & My.Settings.DataDir & "\cacert.key" & Chr(34) & " -config " & Chr(34) & Environ("LOCALAPPDATA") & My.Settings.DataDir + "\openssl.cfg" & Chr(34)
+            Shell(filePath, AppWinStyle.Hide, True, -1)
 
-            DelFileOnExist("openssl.cfg")
+            DelFileOnExist(Environ("LOCALAPPDATA") & My.Settings.DataDir & "\openssl.cfg")
 
             Dim fileReader As String
-            fileReader = My.Computer.FileSystem.ReadAllText("cacert.csr")
+            filePath = Environ("LOCALAPPDATA") & My.Settings.DataDir & "\cacert.csr"
+            fileReader = My.Computer.FileSystem.ReadAllText(filePath)
             txtCSR.Text = fileReader
             btnCAcertSig.BackColor = Color.Green
             btnCAcertSig.Enabled = True
             Me.AcceptButton = btnCAcertSig
 
-            My.Settings.actServer =My.Settings.accServer & My.Settings.accTyp & gbArt.Tag.ToString
+            My.Settings.actServer = My.Settings.accServer & My.Settings.accTyp & gbArt.Tag.ToString
 
             Select Case gbTyp.Tag.ToString
                 Case "rbPrivat"
@@ -229,7 +234,7 @@ Public Class frmCAcertCSR
 
         Dim ascii As Encoding = Encoding.ASCII
         Dim file As System.IO.StreamWriter
-        file = My.Computer.FileSystem.OpenTextFileWriter("cacert.crt", False, ascii)
+        file = My.Computer.FileSystem.OpenTextFileWriter(Environ("LOCALAPPDATA") & My.Settings.DataDir & "\cacert.crt", False, ascii)
         file.Write(txtPem.Text)
         file.Write("--")
         file.Close()
@@ -238,7 +243,7 @@ Public Class frmCAcertCSR
         webCAcert.Navigate(My.Settings(My.Settings.accServer & My.Settings.accTyp & "Server").ToString & My.Settings.accLogout)
         txtCSR.Text = ""
         txtPem.Text = ""
-        webCAcert.Navigate("about:blank")
+        webCAcert.Navigate("about: blank")
     End Sub
 
     Private Sub webCAcert_DocumentCompleted(ByVal sender As System.Object, ByVal e As System.Windows.Forms.WebBrowserDocumentCompletedEventArgs) Handles webCAcert.DocumentCompleted
@@ -292,7 +297,7 @@ Public Class frmCAcertCSR
                     btnCACertSave.BackColor = Color.Red
                     Me.AcceptButton = btnGenerate
                     txtCommon.Focus()
-                    Shell("explorer .", AppWinStyle.NormalFocus, False)
+                    Shell("explorer " & Chr(34) & Environ("LOCALAPPDATA") & My.Settings.DataDir & Chr(34), AppWinStyle.NormalFocus, False)
                     Exit Select
             End Select
         End If
