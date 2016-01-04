@@ -104,10 +104,10 @@ Public Class frmCAcertCSR
 
             'Löschen aller vorhanden Zertifikatsdateien
 
-            chkDel("openssl.cfg")
-            chkDel("cacert.key")
-            chkDel("cacert.csr")
-            chkDel("cacert.crt")
+            DelFileOnExist("openssl.cfg")
+            DelFileOnExist("cacert.key")
+            DelFileOnExist("cacert.csr")
+            DelFileOnExist("cacert.crt")
 
             Dim ascii As Encoding = Encoding.ASCII
             Dim file As System.IO.StreamWriter
@@ -164,7 +164,7 @@ Public Class frmCAcertCSR
 
             Shell(My.Settings.ssl & "\bin\openssl.exe req -new -out cacert.csr -key cacert.key -config openssl.cfg", AppWinStyle.Hide, True, -1)
 
-            chkDel("openssl.cfg")
+            DelFileOnExist("openssl.cfg")
 
             Dim fileReader As String
             fileReader = My.Computer.FileSystem.ReadAllText("cacert.csr")

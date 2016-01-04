@@ -35,7 +35,7 @@
         SendKeys.Send("{ENTER}")
     End Sub
 
-    Sub chkDel(ByVal strFile As String)
+    Sub DelFileOnExist(ByVal strFile As String)
         If My.Computer.FileSystem.FileExists(strFile) Then
             My.Computer.FileSystem.DeleteFile(strFile)
         End If
