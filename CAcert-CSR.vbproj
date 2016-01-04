@@ -142,30 +142,30 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AboutBox.Designer.vb">
+    <Compile Include="Forms\AboutBox.Designer.vb">
       <DependentUpon>AboutBox.vb</DependentUpon>
     </Compile>
-    <Compile Include="AboutBox.vb">
+    <Compile Include="Forms\AboutBox.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmInitExtend.Designer.vb">
+    <Compile Include="Forms\frmInitExtend.Designer.vb">
       <DependentUpon>frmInitExtend.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmInitExtend.vb">
+    <Compile Include="Forms\frmInitExtend.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Other.vb" />
-    <Compile Include="frmCAcert-CSR.vb">
+    <Compile Include="Modules\Other.vb" />
+    <Compile Include="Forms\frmCAcert-CSR.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmCAcert-CSR.Designer.vb">
+    <Compile Include="Forms\frmCAcert-CSR.Designer.vb">
       <DependentUpon>frmCAcert-CSR.vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmInit.Designer.vb">
+    <Compile Include="Forms\frmInit.Designer.vb">
       <DependentUpon>frmInit.vb</DependentUpon>
     </Compile>
-    <Compile Include="frmInit.vb">
+    <Compile Include="Forms\frmInit.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -184,37 +184,37 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
     <Compile Include="Settings.vb" />
-    <Compile Include="SplashScreen.Designer.vb">
+    <Compile Include="Forms\SplashScreen.Designer.vb">
       <DependentUpon>SplashScreen.vb</DependentUpon>
     </Compile>
-    <Compile Include="SplashScreen.vb">
+    <Compile Include="Forms\SplashScreen.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="WebForm.vb" />
+    <Compile Include="Class\WebForm.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="AboutBox.en.resx">
+    <EmbeddedResource Include="Forms\AboutBox.en.resx">
       <DependentUpon>AboutBox.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AboutBox.resx">
+    <EmbeddedResource Include="Forms\AboutBox.resx">
       <DependentUpon>AboutBox.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCAcert-CSR.en.resx">
+    <EmbeddedResource Include="Forms\frmCAcert-CSR.en.resx">
       <DependentUpon>frmCAcert-CSR.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmCAcert-CSR.resx">
+    <EmbeddedResource Include="Forms\frmCAcert-CSR.resx">
       <DependentUpon>frmCAcert-CSR.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmInit.en.resx">
+    <EmbeddedResource Include="Forms\frmInit.en.resx">
       <DependentUpon>frmInit.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmInitExtend.en.resx">
+    <EmbeddedResource Include="Forms\frmInitExtend.en.resx">
       <DependentUpon>frmInitExtend.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmInitExtend.resx">
+    <EmbeddedResource Include="Forms\frmInitExtend.resx">
       <DependentUpon>frmInitExtend.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmInit.resx">
+    <EmbeddedResource Include="Forms\frmInit.resx">
       <DependentUpon>frmInit.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.en.resx" />
@@ -224,10 +224,10 @@
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="SplashScreen.en.resx">
+    <EmbeddedResource Include="Forms\SplashScreen.en.resx">
       <DependentUpon>SplashScreen.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="SplashScreen.resx">
+    <EmbeddedResource Include="Forms\SplashScreen.resx">
       <DependentUpon>SplashScreen.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
