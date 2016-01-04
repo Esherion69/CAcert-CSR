@@ -86,8 +86,13 @@
     <Setting Name="certPass" Type="System.String" Scope="User">
       <Value Profile="(Default)">testpw</Value>
     </Setting>
+<<<<<<< HEAD
     <Setting Name="DataDir" Type="System.String" Scope="User">
       <Value Profile="(Default)">\Andreas_Terpotiz</Value>
+=======
+    <Setting Name="Language" Type="System.String" Scope="User">
+      <Value Profile="(Default)">de</Value>
+>>>>>>> INOPIAE-translation
     </Setting>
   </Settings>
 </SettingsFile>

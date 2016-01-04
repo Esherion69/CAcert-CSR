@@ -1,6 +1,7 @@
 ﻿Imports System
 Imports System.IO
 Imports System.Text
+Imports System.Globalization
 
 Public Class frmCAcertCSR
     Declare Sub Sleep Lib "kernel32" (ByVal dwMilliseconds As Integer)
@@ -14,6 +15,7 @@ Public Class frmCAcertCSR
     Public strWo As String = "Browser Start"
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        Init()
         If My.Settings.firstRun Then
             My.Settings.firstRun = False
             My.Settings.Save()
@@ -387,5 +389,31 @@ Public Class frmCAcertCSR
         Timer1.Stop()
         strWo = "CSR Eingabe"
         webCAcert.Navigate(My.Settings(My.Settings.accServer & My.Settings.accTyp & "Server").ToString.Replace("http://", "https://") & My.Settings(gbTyp.Tag.ToString & gbArt.Tag.ToString).ToString)
+    End Sub
+
+    Private Sub DeutschToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DeutschToolStripMenuItem.Click
+        My.Settings.Language = "de"
+        Init()
+    End Sub
+
+    Private Sub EnglischToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles EnglischToolStripMenuItem.Click
+        My.Settings.Language = "en"
+        Init()
+    End Sub
+
+    Private Sub Init()
+        System.Threading.Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo(My.Settings.Language)
+
+        Me.DeutschToolStripMenuItem.Text = My.Resources.CAcert_CSR_UI.Language_DE
+        Me.EnglischToolStripMenuItem.Text = My.Resources.CAcert_CSR_UI.Language_EN
+
+        Select Case My.Settings.Language
+            Case "en"
+                Me.EnglischToolStripMenuItem.Checked = True
+                Me.DeutschToolStripMenuItem.Checked = False
+            Case "de"
+                Me.EnglischToolStripMenuItem.Checked = False
+                Me.DeutschToolStripMenuItem.Checked = True
+        End Select
     End Sub
 End Class

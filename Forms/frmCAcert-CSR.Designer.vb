@@ -68,6 +68,9 @@ Partial Class frmCAcertCSR
         Me.HilfeToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.InfoToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.SpracheToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DeutschToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EnglischToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.tcCert.SuspendLayout()
         Me.tpCreate.SuspendLayout()
         Me.gbArt.SuspendLayout()
@@ -334,7 +337,7 @@ Partial Class frmCAcertCSR
         '
         'OptionToolStripMenuItem
         '
-        Me.OptionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EinstellungenToolStripMenuItem1})
+        Me.OptionToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.EinstellungenToolStripMenuItem1, Me.SpracheToolStripMenuItem})
         Me.OptionToolStripMenuItem.Name = "OptionToolStripMenuItem"
         resources.ApplyResources(Me.OptionToolStripMenuItem, "OptionToolStripMenuItem")
         '
@@ -357,6 +360,22 @@ Partial Class frmCAcertCSR
         'Timer1
         '
         Me.Timer1.Interval = 5000
+        '
+        'SpracheToolStripMenuItem
+        '
+        Me.SpracheToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.DeutschToolStripMenuItem, Me.EnglischToolStripMenuItem})
+        Me.SpracheToolStripMenuItem.Name = "SpracheToolStripMenuItem"
+        resources.ApplyResources(Me.SpracheToolStripMenuItem, "SpracheToolStripMenuItem")
+        '
+        'DeutschToolStripMenuItem
+        '
+        Me.DeutschToolStripMenuItem.Name = "DeutschToolStripMenuItem"
+        resources.ApplyResources(Me.DeutschToolStripMenuItem, "DeutschToolStripMenuItem")
+        '
+        'EnglischToolStripMenuItem
+        '
+        Me.EnglischToolStripMenuItem.Name = "EnglischToolStripMenuItem"
+        resources.ApplyResources(Me.EnglischToolStripMenuItem, "EnglischToolStripMenuItem")
         '
         'frmCAcertCSR
         '
@@ -424,4 +443,7 @@ Partial Class frmCAcertCSR
     Friend WithEvents rbPrivat As System.Windows.Forms.RadioButton
     Friend WithEvents cbCCA As System.Windows.Forms.CheckBox
     Friend WithEvents Timer1 As Timer
+    Friend WithEvents SpracheToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents DeutschToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
+    Friend WithEvents EnglischToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class
