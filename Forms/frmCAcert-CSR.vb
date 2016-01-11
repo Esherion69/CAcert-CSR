@@ -12,7 +12,7 @@ Public Class frmCAcertCSR
     Public strCrt As String
     Public strmd5 As String
 
-    Public strWo As String = "Browser Start"
+    Public strWo As String = My.Resources.CAcert_CSR_UI.csr_strWoStart
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Init()
@@ -22,7 +22,7 @@ Public Class frmCAcertCSR
             frmInit.ShowDialog()
         End If
         If Not FileIO.FileSystem.FileExists(My.Settings.ssl & "\bin\openssl.exe") Then
-            MsgBox("OpenSSL wurde nicht gefunden. Bitte installieren Sie es in den Pfad " & My.Settings.ssl & "nach.")
+            MessageBox.Show(String.Format(My.Resources.CAcert_CSR_UI.csr_msgOpenSSL, My.Settings.ssl))
             Application.Exit()
         End If
 
@@ -37,7 +37,7 @@ Public Class frmCAcertCSR
 
     Private Sub btnPlusClick(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPlus.Click
         Dim ret As String
-        ret = InputBox("Name: ", "Weiterer Name", "")
+        ret = InputBox(My.Resources.CAcert_CSR_UI.csr_inputBoxPrompt, My.Resources.CAcert_CSR_UI.csr_inputBoxTitle, "")
 
         If ret <> "" And ret <> txtCommon.Text Then
             lstNamen.Items.Add(ret)
@@ -54,7 +54,7 @@ Public Class frmCAcertCSR
         lstNamen.Items.Clear()
     End Sub
 
-    Private Sub btnAll_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnAll.Click
+    Private Sub btnAll_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnClearAll.Click
         txtCommon.Text = ""
         lstNamen.Items.Clear()
         txtCSR.Text = ""
@@ -79,7 +79,7 @@ Public Class frmCAcertCSR
             rbServer.Enabled = False
             rbServer.Checked = False
 
-            btnAll.Enabled = False
+            btnClearAll.Enabled = False
             btnClear.Enabled = False
             btnPlus.Enabled = False
             btnMinus.Enabled = False
@@ -206,20 +206,20 @@ Public Class frmCAcertCSR
             btnCAcertFin.BackColor = Color.Yellow
             webCAcert.Navigate(My.Settings.actServer & My.Settings.accLogin)
             If My.Settings.accTyp = "Pass" Then
-                strWo = "Anmelden"
+                strWo = My.Resources.CAcert_CSR_UI.csr_strWoLogin
                 webCAcert.Navigate(My.Settings(My.Settings.accServer & My.Settings.accTyp & "Server").ToString & My.Settings.accLogin)
             Else
-                strWo = "CSR Eingabe"
+                strWo = My.Resources.CAcert_CSR_UI.csr_strWoCSR
                 webCAcert.Navigate(My.Settings.actServer & My.Settings.actPage)
             End If
         Else
-            MsgBox("Bitte die CCA akzeptieren")
+            MessageBox.Show(My.Resources.CAcert_CSR_UI.csr_msgCCA)
         End If
     End Sub
 
     Private Sub btnCAcertFin_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnCAcertFin.Click
         btnCACertSave.BackColor = Color.Yellow
-        strWo = "SIG Erzeugen"
+        strWo = My.Resources.CAcert_CSR_UI.csr_strWoSig
         SubmitButton()
     End Sub
 
@@ -241,7 +241,7 @@ Public Class frmCAcertCSR
         file.Write("--")
         file.Close()
 
-        strWo = "Abmelden"
+        strWo = My.Resources.CAcert_CSR_UI.csr_strWoLogout
         webCAcert.Navigate(My.Settings(My.Settings.accServer & My.Settings.accTyp & "Server").ToString & My.Settings.accLogout)
         txtCSR.Text = ""
         txtPem.Text = ""
@@ -252,16 +252,16 @@ Public Class frmCAcertCSR
         If (sender Is webCAcert) Then
             Dim myForm As New WebBrowserForm(webCAcert)
             Select Case strWo
-                Case "Browser Start"
+                Case My.Resources.CAcert_CSR_UI.csr_strWoStart
                     Exit Select
-                Case "Anmelden"
+                Case My.Resources.CAcert_CSR_UI.csr_strWoLogin
                     Debug.Print("Dokument: " & strWo & " komplett geladen.")
                     myForm.InnerText("email", My.Settings.Mail)
                     myForm.InnerText("pword", My.Settings.Password)
                     SubmitButton()
                     Timer1.Start()
                     Exit Select
-                Case "CSR Eingabe"
+                Case My.Resources.CAcert_CSR_UI.csr_strWoCSR
                     Debug.Print("Dokument: " & strWo & " komplett geladen.")
 
                     myForm.Radiobox("rootcert", IIf(rbClass1.Checked, rbClass1.Tag.ToString, rbClass3.Tag.ToString).ToString)
@@ -272,22 +272,22 @@ Public Class frmCAcertCSR
                         myForm.InnerText("CSR", txtCSR.Text)
                     End If
                     myForm.Checkbox("CCA", True)
-                    strWo = "CSR Bestätigung"
+                    strWo = My.Resources.CAcert_CSR_UI.csr_strWoConfirmation
                     SubmitButton()
                     Exit Select
-                Case "CSR Bestätigung"
+                Case My.Resources.CAcert_CSR_UI.csr_strWoConfirmation
                     btnCAcertFin.BackColor = Color.Green
                     btnCAcertFin.Enabled = True
                     Me.AcceptButton = btnCAcertFin
                     Application.DoEvents()
                     Exit Select
-                Case "SIG Erzeugen"
+                Case My.Resources.CAcert_CSR_UI.csr_strWoSig
                     'Die Domain ist nicht bestätigt.
                     btnCACertSave.BackColor = Color.Green
                     btnCACertSave.Enabled = True
                     Me.AcceptButton = btnCACertSave
                     Exit Select
-                Case "Abmelden"
+                Case My.Resources.CAcert_CSR_UI.csr_strWoLogout
                     txtCommon.Text = ""
                     btnGenerate.Enabled = False
                     btnGenerate.BackColor = Color.Red
@@ -319,7 +319,7 @@ Public Class frmCAcertCSR
 
     Private Sub Typ_CheckedChanged(sender As Object, e As EventArgs) Handles rbPrivat.CheckedChanged, rbOrg.CheckedChanged
         If rbOrg.Checked Then
-            MsgBox("Wurde noch nicht umgesetzt." & vbCrLf & "Stelle auf Privat um.")
+            MessageBox.Show(My.Resources.CAcert_CSR_UI.csr_msgNotAvailable & vbNewLine & My.Resources.CAcert_CSR_UI.csr_msgTurnPrivate)
             rbPrivat.Checked = True
             Exit Sub
         End If
@@ -359,7 +359,7 @@ Public Class frmCAcertCSR
         '    Exit Sub
         'End If
         If rbClient.Checked Or rbServer.Checked Then
-            btnAll.Enabled = True
+            btnClearAll.Enabled = True
             btnClear.Enabled = True
             btnPlus.Enabled = True
             btnMinus.Enabled = True
@@ -371,7 +371,7 @@ Public Class frmCAcertCSR
             btnGenerate.Enabled = True
             btnGenerate.BackColor = Color.Green
         Else
-            btnAll.Enabled = False
+            btnClearAll.Enabled = False
             btnClear.Enabled = False
             btnPlus.Enabled = False
             btnMinus.Enabled = False
@@ -387,7 +387,7 @@ Public Class frmCAcertCSR
 
     Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
         Timer1.Stop()
-        strWo = "CSR Eingabe"
+        strWo = My.Resources.CAcert_CSR_UI.csr_strWoCSR
         webCAcert.Navigate(My.Settings(My.Settings.accServer & My.Settings.accTyp & "Server").ToString.Replace("http://", "https://") & My.Settings(gbTyp.Tag.ToString & gbArt.Tag.ToString).ToString)
     End Sub
 
@@ -404,6 +404,12 @@ Public Class frmCAcertCSR
     Private Sub Init()
         System.Threading.Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo(My.Settings.Language)
 
+        Me.DateiToolStripMenuItem1.Text = My.Resources.CAcert_CSR_UI.mnuFile
+        Me.BeendenToolStripMenuItem1.Text = My.Resources.CAcert_CSR_UI.mnuQuit
+
+        Me.OptionToolStripMenuItem.Text = My.Resources.CAcert_CSR_UI.mnuTools
+        Me.EinstellungenToolStripMenuItem1.Text = My.Resources.CAcert_CSR_UI.mnuSettings
+        Me.SpracheToolStripMenuItem.Text = My.Resources.CAcert_CSR_UI.mnuLanguage
         Me.DeutschToolStripMenuItem.Text = My.Resources.CAcert_CSR_UI.Language_DE
         Me.EnglischToolStripMenuItem.Text = My.Resources.CAcert_CSR_UI.Language_EN
 
@@ -415,5 +421,29 @@ Public Class frmCAcertCSR
                 Me.EnglischToolStripMenuItem.Checked = False
                 Me.DeutschToolStripMenuItem.Checked = True
         End Select
+
+        Me.HilfeToolStripMenuItem1.Text = My.Resources.CAcert_CSR_UI.mnuHelp
+        Me.InfoToolStripMenuItem1.Text = My.Resources.CAcert_CSR_UI.mnuInfo
+
+        Me.tpCreate.Text = My.Resources.CAcert_CSR_UI.csr_tpCreate
+        Me.lblCommon.Text = My.Resources.CAcert_CSR_UI.csr_lblCommon
+
+        Me.gbTyp.Text = My.Resources.CAcert_CSR_UI.csr_gbTyp
+        Me.rbPrivat.Text = My.Resources.CAcert_CSR_UI.csr_rbPrivate
+        Me.rbOrg.Text = My.Resources.CAcert_CSR_UI.csr_rbOrganisation
+
+        Me.gbArt.Text = My.Resources.CAcert_CSR_UI.csr_gbArt
+        Me.rbClient.Text = My.Resources.CAcert_CSR_UI.csr_rbClient
+        Me.rbServer.Text = My.Resources.CAcert_CSR_UI.csr_rbServer
+
+        Me.lblNamen.Text = My.Resources.CAcert_CSR_UI.csr_lblNamen
+        Me.btnClear.Text = My.Resources.CAcert_CSR_UI.btnClear
+        Me.btnClearAll.Text = My.Resources.CAcert_CSR_UI.btnClearAll
+        Me.lblClass.Text = My.Resources.CAcert_CSR_UI.csr_lblClass
+
+        Me.btnGenerate.Text = My.Resources.CAcert_CSR_UI.csr_btnGenerate
+        Me.btnCAcertSig.Text = My.Resources.CAcert_CSR_UI.csr_btnCAcertSig
+        Me.btnCAcertFin.Text = My.Resources.CAcert_CSR_UI.csr_btnCAcertFin
+        Me.btnCACertSave.Text = My.Resources.CAcert_CSR_UI.csr_btnCAcertSave
     End Sub
 End Class

@@ -44,7 +44,7 @@ Partial Class frmCAcertCSR
         Me.lblClass = New System.Windows.Forms.Label()
         Me.rbClass3 = New System.Windows.Forms.RadioButton()
         Me.rbClass1 = New System.Windows.Forms.RadioButton()
-        Me.btnAll = New System.Windows.Forms.Button()
+        Me.btnClearAll = New System.Windows.Forms.Button()
         Me.btnClear = New System.Windows.Forms.Button()
         Me.btnCACertSave = New System.Windows.Forms.Button()
         Me.btnCAcertSig = New System.Windows.Forms.Button()
@@ -65,12 +65,12 @@ Partial Class frmCAcertCSR
         Me.BeendenToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.OptionToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EinstellungenToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.HilfeToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.InfoToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.SpracheToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.DeutschToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.EnglischToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.HilfeToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.InfoToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.tcCert.SuspendLayout()
         Me.tpCreate.SuspendLayout()
         Me.gbArt.SuspendLayout()
@@ -133,7 +133,7 @@ Partial Class frmCAcertCSR
         Me.tpCreate.Controls.Add(Me.lblClass)
         Me.tpCreate.Controls.Add(Me.rbClass3)
         Me.tpCreate.Controls.Add(Me.rbClass1)
-        Me.tpCreate.Controls.Add(Me.btnAll)
+        Me.tpCreate.Controls.Add(Me.btnClearAll)
         Me.tpCreate.Controls.Add(Me.btnClear)
         Me.tpCreate.Controls.Add(Me.btnCACertSave)
         Me.tpCreate.Controls.Add(Me.btnCAcertSig)
@@ -229,11 +229,11 @@ Partial Class frmCAcertCSR
         Me.rbClass1.Tag = "1"
         Me.rbClass1.UseVisualStyleBackColor = True
         '
-        'btnAll
+        'btnClearAll
         '
-        resources.ApplyResources(Me.btnAll, "btnAll")
-        Me.btnAll.Name = "btnAll"
-        Me.btnAll.UseVisualStyleBackColor = True
+        resources.ApplyResources(Me.btnClearAll, "btnClearAll")
+        Me.btnClearAll.Name = "btnClearAll"
+        Me.btnClearAll.UseVisualStyleBackColor = True
         '
         'btnClear
         '
@@ -412,7 +412,7 @@ Partial Class frmCAcertCSR
     Friend WithEvents lblClass As System.Windows.Forms.Label
     Friend WithEvents rbClass3 As System.Windows.Forms.RadioButton
     Friend WithEvents rbClass1 As System.Windows.Forms.RadioButton
-    Friend WithEvents btnAll As System.Windows.Forms.Button
+    Friend WithEvents btnClearAll As System.Windows.Forms.Button
     Friend WithEvents btnClear As System.Windows.Forms.Button
     Friend WithEvents btnCACertSave As System.Windows.Forms.Button
     Friend WithEvents btnCAcertSig As System.Windows.Forms.Button
