@@ -53,141 +53,216 @@ Partial Class frmInitExtend
         '
         'btnOK
         '
-        resources.ApplyResources(Me.btnOK, "btnOK")
+        Me.btnOK.Location = New System.Drawing.Point(380, 277)
         Me.btnOK.Name = "btnOK"
+        Me.btnOK.Size = New System.Drawing.Size(83, 23)
+        Me.btnOK.TabIndex = 13
+        Me.btnOK.Text = "Ok"
         Me.btnOK.UseVisualStyleBackColor = True
         '
         'fbdSettings
         '
-        resources.ApplyResources(Me.fbdSettings, "fbdSettings")
+        Me.fbdSettings.SelectedPath = "c:\"
         '
         'lblProdPassServ
         '
-        resources.ApplyResources(Me.lblProdPassServ, "lblProdPassServ")
+        Me.lblProdPassServ.AutoSize = True
+        Me.lblProdPassServ.Location = New System.Drawing.Point(12, 9)
         Me.lblProdPassServ.Name = "lblProdPassServ"
+        Me.lblProdPassServ.Size = New System.Drawing.Size(138, 13)
+        Me.lblProdPassServ.TabIndex = 0
+        Me.lblProdPassServ.Text = "Produktiv Server (Passwort)"
         '
         'lblTestPassServ
         '
-        resources.ApplyResources(Me.lblTestPassServ, "lblTestPassServ")
+        Me.lblTestPassServ.AutoSize = True
+        Me.lblTestPassServ.Location = New System.Drawing.Point(12, 61)
         Me.lblTestPassServ.Name = "lblTestPassServ"
+        Me.lblTestPassServ.Size = New System.Drawing.Size(114, 13)
+        Me.lblTestPassServ.TabIndex = 2
+        Me.lblTestPassServ.Text = "Test Server (Passwort)"
         '
         'txtProdPassServ
         '
-        resources.ApplyResources(Me.txtProdPassServ, "txtProdPassServ")
+        Me.txtProdPassServ.Location = New System.Drawing.Point(153, 6)
         Me.txtProdPassServ.Name = "txtProdPassServ"
+        Me.txtProdPassServ.Size = New System.Drawing.Size(310, 20)
+        Me.txtProdPassServ.TabIndex = 1
         '
         'txtTestPassServ
         '
-        resources.ApplyResources(Me.txtTestPassServ, "txtTestPassServ")
+        Me.txtTestPassServ.Location = New System.Drawing.Point(153, 58)
         Me.txtTestPassServ.Name = "txtTestPassServ"
+        Me.txtTestPassServ.Size = New System.Drawing.Size(310, 20)
+        Me.txtTestPassServ.TabIndex = 3
         '
         'lblUserClient
         '
-        resources.ApplyResources(Me.lblUserClient, "lblUserClient")
+        Me.lblUserClient.AutoSize = True
+        Me.lblUserClient.Location = New System.Drawing.Point(12, 113)
         Me.lblUserClient.Name = "lblUserClient"
+        Me.lblUserClient.Size = New System.Drawing.Size(78, 13)
+        Me.lblUserClient.TabIndex = 4
+        Me.lblUserClient.Text = "Benutzer Client"
         '
         'lblOrgClient
         '
-        resources.ApplyResources(Me.lblOrgClient, "lblOrgClient")
+        Me.lblOrgClient.AutoSize = True
+        Me.lblOrgClient.Location = New System.Drawing.Point(12, 139)
         Me.lblOrgClient.Name = "lblOrgClient"
+        Me.lblOrgClient.Size = New System.Drawing.Size(95, 13)
+        Me.lblOrgClient.TabIndex = 6
+        Me.lblOrgClient.Text = "Organisation Client"
         '
         'lblUserServer
         '
-        resources.ApplyResources(Me.lblUserServer, "lblUserServer")
+        Me.lblUserServer.AutoSize = True
+        Me.lblUserServer.Location = New System.Drawing.Point(12, 165)
         Me.lblUserServer.Name = "lblUserServer"
+        Me.lblUserServer.Size = New System.Drawing.Size(83, 13)
+        Me.lblUserServer.TabIndex = 8
+        Me.lblUserServer.Text = "Benutzer Server"
         '
         'lblOrgServer
         '
-        resources.ApplyResources(Me.lblOrgServer, "lblOrgServer")
+        Me.lblOrgServer.AutoSize = True
+        Me.lblOrgServer.Location = New System.Drawing.Point(12, 191)
         Me.lblOrgServer.Name = "lblOrgServer"
+        Me.lblOrgServer.Size = New System.Drawing.Size(100, 13)
+        Me.lblOrgServer.TabIndex = 10
+        Me.lblOrgServer.Text = "Organisation Server"
         '
         'txtUserClient
         '
-        resources.ApplyResources(Me.txtUserClient, "txtUserClient")
+        Me.txtUserClient.Location = New System.Drawing.Point(153, 110)
         Me.txtUserClient.Name = "txtUserClient"
+        Me.txtUserClient.Size = New System.Drawing.Size(310, 20)
+        Me.txtUserClient.TabIndex = 5
         '
         'txtOrgClient
         '
-        resources.ApplyResources(Me.txtOrgClient, "txtOrgClient")
+        Me.txtOrgClient.Location = New System.Drawing.Point(153, 136)
         Me.txtOrgClient.Name = "txtOrgClient"
+        Me.txtOrgClient.Size = New System.Drawing.Size(310, 20)
+        Me.txtOrgClient.TabIndex = 7
         '
         'txtUserServ
         '
-        resources.ApplyResources(Me.txtUserServ, "txtUserServ")
+        Me.txtUserServ.Location = New System.Drawing.Point(153, 162)
         Me.txtUserServ.Name = "txtUserServ"
+        Me.txtUserServ.Size = New System.Drawing.Size(310, 20)
+        Me.txtUserServ.TabIndex = 9
         '
         'txtOrgServer
         '
-        resources.ApplyResources(Me.txtOrgServer, "txtOrgServer")
+        Me.txtOrgServer.Location = New System.Drawing.Point(153, 188)
         Me.txtOrgServer.Name = "txtOrgServer"
+        Me.txtOrgServer.Size = New System.Drawing.Size(310, 20)
+        Me.txtOrgServer.TabIndex = 11
         '
         'gbLogin
         '
         Me.gbLogin.Controls.Add(Me.rbCertificate)
         Me.gbLogin.Controls.Add(Me.rbPassword)
-        resources.ApplyResources(Me.gbLogin, "gbLogin")
+        Me.gbLogin.Location = New System.Drawing.Point(153, 266)
         Me.gbLogin.Name = "gbLogin"
+        Me.gbLogin.Size = New System.Drawing.Size(174, 44)
+        Me.gbLogin.TabIndex = 12
         Me.gbLogin.TabStop = False
+        Me.gbLogin.Text = "Anmelden mit"
         '
         'rbCertificate
         '
-        resources.ApplyResources(Me.rbCertificate, "rbCertificate")
+        Me.rbCertificate.AutoSize = True
+        Me.rbCertificate.Location = New System.Drawing.Point(102, 19)
         Me.rbCertificate.Name = "rbCertificate"
+        Me.rbCertificate.Size = New System.Drawing.Size(66, 17)
+        Me.rbCertificate.TabIndex = 1
         Me.rbCertificate.TabStop = True
+        Me.rbCertificate.Text = "Zertifikat"
         Me.rbCertificate.UseVisualStyleBackColor = True
         '
         'rbPassword
         '
-        resources.ApplyResources(Me.rbPassword, "rbPassword")
+        Me.rbPassword.AutoSize = True
+        Me.rbPassword.Location = New System.Drawing.Point(6, 19)
         Me.rbPassword.Name = "rbPassword"
+        Me.rbPassword.Size = New System.Drawing.Size(68, 17)
+        Me.rbPassword.TabIndex = 0
         Me.rbPassword.TabStop = True
+        Me.rbPassword.Text = "Passwort"
         Me.rbPassword.UseVisualStyleBackColor = True
         '
         'txtProdCertServ
         '
-        resources.ApplyResources(Me.txtProdCertServ, "txtProdCertServ")
+        Me.txtProdCertServ.Location = New System.Drawing.Point(153, 32)
         Me.txtProdCertServ.Name = "txtProdCertServ"
+        Me.txtProdCertServ.Size = New System.Drawing.Size(310, 20)
+        Me.txtProdCertServ.TabIndex = 15
         '
         'lblProdCertServ
         '
-        resources.ApplyResources(Me.lblProdCertServ, "lblProdCertServ")
+        Me.lblProdCertServ.AutoSize = True
+        Me.lblProdCertServ.Location = New System.Drawing.Point(12, 35)
         Me.lblProdCertServ.Name = "lblProdCertServ"
+        Me.lblProdCertServ.Size = New System.Drawing.Size(136, 13)
+        Me.lblProdCertServ.TabIndex = 14
+        Me.lblProdCertServ.Text = "Produktiv Server (Zertifikat)"
         '
         'txtTestCertServ
         '
-        resources.ApplyResources(Me.txtTestCertServ, "txtTestCertServ")
+        Me.txtTestCertServ.Location = New System.Drawing.Point(153, 84)
         Me.txtTestCertServ.Name = "txtTestCertServ"
+        Me.txtTestCertServ.Size = New System.Drawing.Size(310, 20)
+        Me.txtTestCertServ.TabIndex = 17
         '
         'lblTestCertServ
         '
-        resources.ApplyResources(Me.lblTestCertServ, "lblTestCertServ")
+        Me.lblTestCertServ.AutoSize = True
+        Me.lblTestCertServ.Location = New System.Drawing.Point(12, 87)
         Me.lblTestCertServ.Name = "lblTestCertServ"
+        Me.lblTestCertServ.Size = New System.Drawing.Size(112, 13)
+        Me.lblTestCertServ.TabIndex = 16
+        Me.lblTestCertServ.Text = "Test Server (Zertifikat)"
         '
         'txtAccLogout
         '
-        resources.ApplyResources(Me.txtAccLogout, "txtAccLogout")
+        Me.txtAccLogout.Location = New System.Drawing.Point(153, 240)
         Me.txtAccLogout.Name = "txtAccLogout"
+        Me.txtAccLogout.Size = New System.Drawing.Size(310, 20)
+        Me.txtAccLogout.TabIndex = 21
         '
         'txtAccLogin
         '
-        resources.ApplyResources(Me.txtAccLogin, "txtAccLogin")
+        Me.txtAccLogin.Location = New System.Drawing.Point(153, 214)
         Me.txtAccLogin.Name = "txtAccLogin"
+        Me.txtAccLogin.Size = New System.Drawing.Size(310, 20)
+        Me.txtAccLogin.TabIndex = 19
         '
         'lblAccLogout
         '
-        resources.ApplyResources(Me.lblAccLogout, "lblAccLogout")
+        Me.lblAccLogout.AutoSize = True
+        Me.lblAccLogout.Location = New System.Drawing.Point(12, 243)
         Me.lblAccLogout.Name = "lblAccLogout"
+        Me.lblAccLogout.Size = New System.Drawing.Size(40, 13)
+        Me.lblAccLogout.TabIndex = 20
+        Me.lblAccLogout.Text = "Logout"
         '
         'lblAccLogin
         '
-        resources.ApplyResources(Me.lblAccLogin, "lblAccLogin")
+        Me.lblAccLogin.AutoSize = True
+        Me.lblAccLogin.Location = New System.Drawing.Point(12, 217)
         Me.lblAccLogin.Name = "lblAccLogin"
+        Me.lblAccLogin.Size = New System.Drawing.Size(33, 13)
+        Me.lblAccLogin.TabIndex = 18
+        Me.lblAccLogin.Text = "Login"
         '
         'frmInitExtend
         '
         Me.AcceptButton = Me.btnOK
-        resources.ApplyResources(Me, "$this")
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(473, 314)
         Me.Controls.Add(Me.txtAccLogout)
         Me.Controls.Add(Me.txtAccLogin)
         Me.Controls.Add(Me.lblAccLogout)
@@ -210,7 +285,9 @@ Partial Class frmInitExtend
         Me.Controls.Add(Me.lblTestPassServ)
         Me.Controls.Add(Me.lblProdPassServ)
         Me.Controls.Add(Me.btnOK)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmInitExtend"
+        Me.Text = "Erweiterte Einstellungen"
         Me.gbLogin.ResumeLayout(False)
         Me.gbLogin.PerformLayout()
         Me.ResumeLayout(False)
