@@ -17,7 +17,7 @@
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
     <IsWebBootstrapper>false</IsWebBootstrapper>
-    <AssemblyVersion>2016.1.11.5</AssemblyVersion>
+    <AssemblyVersion>2016.1.4.5</AssemblyVersion>
     <PublishUrl>publish\CAcert-CSR\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
