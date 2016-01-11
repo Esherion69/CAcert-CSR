@@ -1,4 +1,5 @@
 ﻿Imports System.Collections.Specialized
+Imports System.Globalization
 
 Public Class frmInitExtend
 
@@ -19,6 +20,26 @@ Public Class frmInitExtend
             Case "Cert"
                 rbCertificate.Checked = True
         End Select
+
+        'Translation
+        System.Threading.Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo(My.Settings.Language)
+
+        Me.Text = My.Resources.CAcert_CSR_UI.ext_Title
+
+        Me.lblProdPassServ.Text = My.Resources.CAcert_CSR_UI.ext_lblProdPassServ
+        Me.lblProdCertServ.Text = My.Resources.CAcert_CSR_UI.ext_lblProdCertServ
+        Me.lblTestPassServ.Text = My.Resources.CAcert_CSR_UI.ext_lblTestPassServer
+        Me.lblTestCertServ.Text = My.Resources.CAcert_CSR_UI.ext_lblTestCertServer
+        Me.lblUserClient.Text = My.Resources.CAcert_CSR_UI.ext_lblUserClient
+        Me.lblOrgClient.Text = My.Resources.CAcert_CSR_UI.ext_lblOrgClient
+        Me.lblUserServer.Text = My.Resources.CAcert_CSR_UI.ext_lblUserServer
+        Me.lblOrgServer.Text = My.Resources.CAcert_CSR_UI.ext_lblOrgServer
+        Me.lblAccLogin.Text = My.Resources.CAcert_CSR_UI.ext_lblAccLogin
+        Me.lblAccLogout.Text = My.Resources.CAcert_CSR_UI.ext_lblAccLogout
+
+        Me.gbLogin.Text = My.Resources.CAcert_CSR_UI.ext_gbLogin
+        Me.rbPassword.Text = My.Resources.CAcert_CSR_UI.ext_rbPassword
+        Me.rbCertificate.Text = My.Resources.CAcert_CSR_UI.ext_rbCertificate
     End Sub
 
     Private Sub btnOK_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnOK.Click
@@ -42,7 +63,7 @@ Public Class frmInitExtend
             My.Settings.Save()
             Me.Close()
         Else
-            MsgBox("Bitte eine Auswahl bei ""Anmelden mit"" machen",, "Fehler")
+            MessageBox.Show(My.Resources.CAcert_CSR_UI.ext_msgLogin, My.Resources.CAcert_CSR_UI.msgTitleError)
         End If
     End Sub
 

@@ -326,6 +326,141 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Anmelden mit ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property ext_gbLogin() As String
+            Get
+                Return ResourceManager.GetString("ext_gbLogin", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Login ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property ext_lblAccLogin() As String
+            Get
+                Return ResourceManager.GetString("ext_lblAccLogin", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Logout ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property ext_lblAccLogout() As String
+            Get
+                Return ResourceManager.GetString("ext_lblAccLogout", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Organisations Client Zertifikat ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property ext_lblOrgClient() As String
+            Get
+                Return ResourceManager.GetString("ext_lblOrgClient", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Ogranisations Server Zertifikat ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property ext_lblOrgServer() As String
+            Get
+                Return ResourceManager.GetString("ext_lblOrgServer", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Produktiv Server (Zertifikat) ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property ext_lblProdCertServ() As String
+            Get
+                Return ResourceManager.GetString("ext_lblProdCertServ", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Produktiv Server (Passwort) ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property ext_lblProdPassServ() As String
+            Get
+                Return ResourceManager.GetString("ext_lblProdPassServ", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Test Server (Zertifikat) ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property ext_lblTestCertServer() As String
+            Get
+                Return ResourceManager.GetString("ext_lblTestCertServer", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Test Server (Password) ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property ext_lblTestPassServer() As String
+            Get
+                Return ResourceManager.GetString("ext_lblTestPassServer", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Privates Client Zeritfikat ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property ext_lblUserClient() As String
+            Get
+                Return ResourceManager.GetString("ext_lblUserClient", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Privates Server Zertifikat ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property ext_lblUserServer() As String
+            Get
+                Return ResourceManager.GetString("ext_lblUserServer", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Bitte eine Auswahl bei &apos;Anmelden mit&apos; machen. ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property ext_msgLogin() As String
+            Get
+                Return ResourceManager.GetString("ext_msgLogin", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Zertifikat ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property ext_rbCertificate() As String
+            Get
+                Return ResourceManager.GetString("ext_rbCertificate", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Passwort ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property ext_rbPassword() As String
+            Get
+                Return ResourceManager.GetString("ext_rbPassword", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Erweiterte Einstellungen ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property ext_Title() As String
+            Get
+                Return ResourceManager.GetString("ext_Title", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Sucht eine lokalisierte Zeichenfolge, die Deutsch ähnelt.
         '''</summary>
         Friend Shared ReadOnly Property Language_DE() As String
@@ -403,6 +538,15 @@ Namespace My.Resources
         Friend Shared ReadOnly Property mnuTools() As String
             Get
                 Return ResourceManager.GetString("mnuTools", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Fehler ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property msgTitleError() As String
+            Get
+                Return ResourceManager.GetString("msgTitleError", resourceCulture)
             End Get
         End Property
     End Class

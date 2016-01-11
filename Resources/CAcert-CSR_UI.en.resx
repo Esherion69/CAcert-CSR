@@ -221,4 +221,52 @@
   <data name="csr_msgTurnPrivate" xml:space="preserve">
     <value>Turn to private.</value>
   </data>
+  <data name="ext_lblProdPassServ" xml:space="preserve">
+    <value>Productive server (password)</value>
+  </data>
+  <data name="ext_Title" xml:space="preserve">
+    <value>Advanced settings</value>
+  </data>
+  <data name="ext_lblProdCertServ" xml:space="preserve">
+    <value>Productive server (certificate)</value>
+  </data>
+  <data name="ext_lblTestPassServer" xml:space="preserve">
+    <value>Test server (password)</value>
+  </data>
+  <data name="ext_lblTestCertServer" xml:space="preserve">
+    <value>Test server (certificate)</value>
+  </data>
+  <data name="ext_lblUserClient" xml:space="preserve">
+    <value>Private cleint certificate</value>
+  </data>
+  <data name="ext_lblOrgClient" xml:space="preserve">
+    <value>Organisation client certificate</value>
+  </data>
+  <data name="ext_lblUserServer" xml:space="preserve">
+    <value>Private server certificate</value>
+  </data>
+  <data name="ext_lblAccLogin" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="ext_lblAccLogout" xml:space="preserve">
+    <value>Logout</value>
+  </data>
+  <data name="ext_gbLogin" xml:space="preserve">
+    <value>Login with</value>
+  </data>
+  <data name="ext_rbPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="ext_rbCertificate" xml:space="preserve">
+    <value>Certificate</value>
+  </data>
+  <data name="ext_lblOrgServer" xml:space="preserve">
+    <value>Organisation server certificate</value>
+  </data>
+  <data name="ext_msgLogin" xml:space="preserve">
+    <value>Please select an option'Login with'.</value>
+  </data>
+  <data name="msgTitleError" xml:space="preserve">
+    <value>Error</value>
+  </data>
 </root>
