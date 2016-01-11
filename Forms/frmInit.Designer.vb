@@ -69,161 +69,252 @@ Partial Class frmInit
         '
         'lblSSL
         '
-        resources.ApplyResources(Me.lblSSL, "lblSSL")
+        Me.lblSSL.AutoSize = True
+        Me.lblSSL.Location = New System.Drawing.Point(7, 20)
         Me.lblSSL.Name = "lblSSL"
+        Me.lblSSL.Size = New System.Drawing.Size(78, 13)
+        Me.lblSSL.TabIndex = 0
+        Me.lblSSL.Text = "OpenSSL Pfad"
         '
         'txtSSL
         '
-        resources.ApplyResources(Me.txtSSL, "txtSSL")
+        Me.txtSSL.Location = New System.Drawing.Point(116, 17)
         Me.txtSSL.Name = "txtSSL"
+        Me.txtSSL.Size = New System.Drawing.Size(342, 20)
+        Me.txtSSL.TabIndex = 1
         '
         'btnOK
         '
-        resources.ApplyResources(Me.btnOK, "btnOK")
+        Me.btnOK.Location = New System.Drawing.Point(487, 511)
         Me.btnOK.Name = "btnOK"
+        Me.btnOK.Size = New System.Drawing.Size(83, 23)
+        Me.btnOK.TabIndex = 26
+        Me.btnOK.Text = "Ok"
         Me.btnOK.UseVisualStyleBackColor = True
         '
         'btnSearch
         '
         Me.btnSearch.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
-        resources.ApplyResources(Me.btnSearch, "btnSearch")
+        Me.btnSearch.Location = New System.Drawing.Point(487, 12)
         Me.btnSearch.Name = "btnSearch"
+        Me.btnSearch.Size = New System.Drawing.Size(83, 23)
+        Me.btnSearch.TabIndex = 24
+        Me.btnSearch.Text = "Durchsuchen"
         Me.btnSearch.UseVisualStyleBackColor = False
         '
         'fbdSettings
         '
-        resources.ApplyResources(Me.fbdSettings, "fbdSettings")
+        Me.fbdSettings.SelectedPath = "c:\"
         '
         'lblCountry
         '
-        resources.ApplyResources(Me.lblCountry, "lblCountry")
+        Me.lblCountry.AutoSize = True
+        Me.lblCountry.Location = New System.Drawing.Point(7, 228)
         Me.lblCountry.Name = "lblCountry"
+        Me.lblCountry.Size = New System.Drawing.Size(61, 13)
+        Me.lblCountry.TabIndex = 18
+        Me.lblCountry.Text = "Land/Staat"
         '
         'txtCountry
         '
-        resources.ApplyResources(Me.txtCountry, "txtCountry")
+        Me.txtCountry.Location = New System.Drawing.Point(116, 225)
         Me.txtCountry.Name = "txtCountry"
+        Me.txtCountry.Size = New System.Drawing.Size(342, 20)
+        Me.txtCountry.TabIndex = 19
         '
         'lblState
         '
-        resources.ApplyResources(Me.lblState, "lblState")
+        Me.lblState.AutoSize = True
+        Me.lblState.Location = New System.Drawing.Point(7, 202)
         Me.lblState.Name = "lblState"
+        Me.lblState.Size = New System.Drawing.Size(97, 13)
+        Me.lblState.TabIndex = 16
+        Me.lblState.Text = "Bundesland/Bezirk"
         '
         'txtState
         '
-        resources.ApplyResources(Me.txtState, "txtState")
+        Me.txtState.Location = New System.Drawing.Point(116, 199)
         Me.txtState.Name = "txtState"
+        Me.txtState.Size = New System.Drawing.Size(342, 20)
+        Me.txtState.TabIndex = 17
         '
         'lblCity
         '
-        resources.ApplyResources(Me.lblCity, "lblCity")
+        Me.lblCity.AutoSize = True
+        Me.lblCity.Location = New System.Drawing.Point(7, 176)
         Me.lblCity.Name = "lblCity"
+        Me.lblCity.Size = New System.Drawing.Size(21, 13)
+        Me.lblCity.TabIndex = 14
+        Me.lblCity.Text = "Ort"
         '
         'lblOrg
         '
-        resources.ApplyResources(Me.lblOrg, "lblOrg")
+        Me.lblOrg.AutoSize = True
+        Me.lblOrg.Location = New System.Drawing.Point(7, 20)
         Me.lblOrg.Name = "lblOrg"
+        Me.lblOrg.Size = New System.Drawing.Size(66, 13)
+        Me.lblOrg.TabIndex = 2
+        Me.lblOrg.Text = "Organisation"
         '
         'lblDep
         '
-        resources.ApplyResources(Me.lblDep, "lblDep")
+        Me.lblDep.AutoSize = True
+        Me.lblDep.Location = New System.Drawing.Point(7, 46)
         Me.lblDep.Name = "lblDep"
+        Me.lblDep.Size = New System.Drawing.Size(51, 13)
+        Me.lblDep.TabIndex = 4
+        Me.lblDep.Text = "Abteilung"
         '
         'txtCity
         '
-        resources.ApplyResources(Me.txtCity, "txtCity")
+        Me.txtCity.Location = New System.Drawing.Point(116, 173)
         Me.txtCity.Name = "txtCity"
+        Me.txtCity.Size = New System.Drawing.Size(342, 20)
+        Me.txtCity.TabIndex = 15
         '
         'txtOrg
         '
-        resources.ApplyResources(Me.txtOrg, "txtOrg")
+        Me.txtOrg.Location = New System.Drawing.Point(116, 17)
         Me.txtOrg.Name = "txtOrg"
+        Me.txtOrg.Size = New System.Drawing.Size(342, 20)
+        Me.txtOrg.TabIndex = 3
         '
         'txtDep
         '
-        resources.ApplyResources(Me.txtDep, "txtDep")
+        Me.txtDep.Location = New System.Drawing.Point(116, 43)
         Me.txtDep.Name = "txtDep"
+        Me.txtDep.Size = New System.Drawing.Size(342, 20)
+        Me.txtDep.TabIndex = 5
         '
         'lblMail
         '
-        resources.ApplyResources(Me.lblMail, "lblMail")
+        Me.lblMail.AutoSize = True
+        Me.lblMail.Location = New System.Drawing.Point(10, 25)
         Me.lblMail.Name = "lblMail"
+        Me.lblMail.Size = New System.Drawing.Size(36, 13)
+        Me.lblMail.TabIndex = 20
+        Me.lblMail.Text = "E-Mail"
         '
         'txtMail
         '
-        resources.ApplyResources(Me.txtMail, "txtMail")
+        Me.txtMail.Location = New System.Drawing.Point(119, 22)
         Me.txtMail.Name = "txtMail"
+        Me.txtMail.Size = New System.Drawing.Size(342, 20)
+        Me.txtMail.TabIndex = 21
         '
         'lblPass
         '
-        resources.ApplyResources(Me.lblPass, "lblPass")
+        Me.lblPass.AutoSize = True
+        Me.lblPass.Location = New System.Drawing.Point(10, 50)
         Me.lblPass.Name = "lblPass"
+        Me.lblPass.Size = New System.Drawing.Size(50, 13)
+        Me.lblPass.TabIndex = 22
+        Me.lblPass.Text = "Passwort"
         '
         'txtPass
         '
-        resources.ApplyResources(Me.txtPass, "txtPass")
+        Me.txtPass.Location = New System.Drawing.Point(119, 47)
         Me.txtPass.Name = "txtPass"
+        Me.txtPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtPass.Size = New System.Drawing.Size(342, 20)
+        Me.txtPass.TabIndex = 23
+        Me.txtPass.Text = "6"
         Me.txtPass.UseSystemPasswordChar = True
         '
         'lblAdr1
         '
-        resources.ApplyResources(Me.lblAdr1, "lblAdr1")
+        Me.lblAdr1.AutoSize = True
+        Me.lblAdr1.Location = New System.Drawing.Point(7, 72)
         Me.lblAdr1.Name = "lblAdr1"
+        Me.lblAdr1.Size = New System.Drawing.Size(51, 13)
+        Me.lblAdr1.TabIndex = 6
+        Me.lblAdr1.Text = "Adresse1"
         '
         'lblAdr2
         '
-        resources.ApplyResources(Me.lblAdr2, "lblAdr2")
+        Me.lblAdr2.AutoSize = True
+        Me.lblAdr2.Location = New System.Drawing.Point(7, 98)
         Me.lblAdr2.Name = "lblAdr2"
+        Me.lblAdr2.Size = New System.Drawing.Size(51, 13)
+        Me.lblAdr2.TabIndex = 8
+        Me.lblAdr2.Text = "Adresse2"
         '
         'lblAdr3
         '
-        resources.ApplyResources(Me.lblAdr3, "lblAdr3")
+        Me.lblAdr3.AutoSize = True
+        Me.lblAdr3.Location = New System.Drawing.Point(7, 124)
         Me.lblAdr3.Name = "lblAdr3"
+        Me.lblAdr3.Size = New System.Drawing.Size(51, 13)
+        Me.lblAdr3.TabIndex = 10
+        Me.lblAdr3.Text = "Adresse3"
         '
         'lblPlz
         '
-        resources.ApplyResources(Me.lblPlz, "lblPlz")
+        Me.lblPlz.AutoSize = True
+        Me.lblPlz.Location = New System.Drawing.Point(7, 150)
         Me.lblPlz.Name = "lblPlz"
+        Me.lblPlz.Size = New System.Drawing.Size(60, 13)
+        Me.lblPlz.TabIndex = 12
+        Me.lblPlz.Text = "Postleitzahl"
         '
         'txtAdr1
         '
-        resources.ApplyResources(Me.txtAdr1, "txtAdr1")
+        Me.txtAdr1.Location = New System.Drawing.Point(116, 69)
         Me.txtAdr1.Name = "txtAdr1"
+        Me.txtAdr1.Size = New System.Drawing.Size(342, 20)
+        Me.txtAdr1.TabIndex = 7
         '
         'txtAdr2
         '
-        resources.ApplyResources(Me.txtAdr2, "txtAdr2")
+        Me.txtAdr2.Location = New System.Drawing.Point(116, 95)
         Me.txtAdr2.Name = "txtAdr2"
+        Me.txtAdr2.Size = New System.Drawing.Size(342, 20)
+        Me.txtAdr2.TabIndex = 9
         '
         'txtAdr3
         '
-        resources.ApplyResources(Me.txtAdr3, "txtAdr3")
+        Me.txtAdr3.Location = New System.Drawing.Point(116, 121)
         Me.txtAdr3.Name = "txtAdr3"
+        Me.txtAdr3.Size = New System.Drawing.Size(342, 20)
+        Me.txtAdr3.TabIndex = 11
         '
         'txtPlz
         '
-        resources.ApplyResources(Me.txtPlz, "txtPlz")
+        Me.txtPlz.Location = New System.Drawing.Point(116, 147)
         Me.txtPlz.Name = "txtPlz"
+        Me.txtPlz.Size = New System.Drawing.Size(342, 20)
+        Me.txtPlz.TabIndex = 13
         '
         'gbServer
         '
         Me.gbServer.BackColor = System.Drawing.Color.Lime
         Me.gbServer.Controls.Add(Me.rbTest)
         Me.gbServer.Controls.Add(Me.rbProd)
-        resources.ApplyResources(Me.gbServer, "gbServer")
+        Me.gbServer.Location = New System.Drawing.Point(12, 326)
         Me.gbServer.Name = "gbServer"
+        Me.gbServer.Size = New System.Drawing.Size(469, 48)
+        Me.gbServer.TabIndex = 27
         Me.gbServer.TabStop = False
+        Me.gbServer.Text = "Server Umgebung"
         '
         'rbTest
         '
-        resources.ApplyResources(Me.rbTest, "rbTest")
+        Me.rbTest.AutoSize = True
+        Me.rbTest.Location = New System.Drawing.Point(116, 22)
         Me.rbTest.Name = "rbTest"
+        Me.rbTest.Size = New System.Drawing.Size(46, 17)
+        Me.rbTest.TabIndex = 1
+        Me.rbTest.Text = "Test"
         Me.rbTest.UseVisualStyleBackColor = True
         '
         'rbProd
         '
-        resources.ApplyResources(Me.rbProd, "rbProd")
+        Me.rbProd.AutoSize = True
+        Me.rbProd.Location = New System.Drawing.Point(6, 22)
         Me.rbProd.Name = "rbProd"
+        Me.rbProd.Size = New System.Drawing.Size(70, 17)
+        Me.rbProd.TabIndex = 0
+        Me.rbProd.Text = "Produktiv"
         Me.rbProd.UseVisualStyleBackColor = True
         '
         'GroupBox2
@@ -247,18 +338,24 @@ Partial Class frmInit
         Me.GroupBox2.Controls.Add(Me.lblState)
         Me.GroupBox2.Controls.Add(Me.txtCountry)
         Me.GroupBox2.Controls.Add(Me.lblCountry)
-        resources.ApplyResources(Me.GroupBox2, "GroupBox2")
+        Me.GroupBox2.Location = New System.Drawing.Point(12, 66)
         Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(469, 254)
+        Me.GroupBox2.TabIndex = 28
         Me.GroupBox2.TabStop = False
+        Me.GroupBox2.Text = "Adresse"
         '
         'GroupBox3
         '
         Me.GroupBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.GroupBox3.Controls.Add(Me.txtSSL)
         Me.GroupBox3.Controls.Add(Me.lblSSL)
-        resources.ApplyResources(Me.GroupBox3, "GroupBox3")
+        Me.GroupBox3.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox3.Name = "GroupBox3"
+        Me.GroupBox3.Size = New System.Drawing.Size(469, 48)
+        Me.GroupBox3.TabIndex = 29
         Me.GroupBox3.TabStop = False
+        Me.GroupBox3.Text = "openSSL"
         '
         'GroupBox4
         '
@@ -267,15 +364,21 @@ Partial Class frmInit
         Me.GroupBox4.Controls.Add(Me.lblPass)
         Me.GroupBox4.Controls.Add(Me.txtMail)
         Me.GroupBox4.Controls.Add(Me.lblMail)
-        resources.ApplyResources(Me.GroupBox4, "GroupBox4")
+        Me.GroupBox4.Location = New System.Drawing.Point(12, 389)
         Me.GroupBox4.Name = "GroupBox4"
+        Me.GroupBox4.Size = New System.Drawing.Size(469, 88)
+        Me.GroupBox4.TabIndex = 30
         Me.GroupBox4.TabStop = False
+        Me.GroupBox4.Text = "Benutzer"
         '
         'btnExtend
         '
         Me.btnExtend.BackColor = System.Drawing.Color.Lime
-        resources.ApplyResources(Me.btnExtend, "btnExtend")
+        Me.btnExtend.Location = New System.Drawing.Point(487, 326)
         Me.btnExtend.Name = "btnExtend"
+        Me.btnExtend.Size = New System.Drawing.Size(83, 23)
+        Me.btnExtend.TabIndex = 31
+        Me.btnExtend.Text = "Erweitert"
         Me.btnExtend.UseVisualStyleBackColor = False
         '
         'GroupBox5
@@ -283,26 +386,38 @@ Partial Class frmInit
         Me.GroupBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.GroupBox5.Controls.Add(Me.txtCertPass)
         Me.GroupBox5.Controls.Add(Me.lblCertPass)
-        resources.ApplyResources(Me.GroupBox5, "GroupBox5")
+        Me.GroupBox5.Location = New System.Drawing.Point(12, 484)
         Me.GroupBox5.Name = "GroupBox5"
+        Me.GroupBox5.Size = New System.Drawing.Size(469, 50)
+        Me.GroupBox5.TabIndex = 32
         Me.GroupBox5.TabStop = False
+        Me.GroupBox5.Text = "Zertfikat"
         '
         'txtCertPass
         '
-        resources.ApplyResources(Me.txtCertPass, "txtCertPass")
+        Me.txtCertPass.Location = New System.Drawing.Point(119, 19)
         Me.txtCertPass.Name = "txtCertPass"
+        Me.txtCertPass.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txtCertPass.Size = New System.Drawing.Size(342, 20)
+        Me.txtCertPass.TabIndex = 25
+        Me.txtCertPass.Text = "6"
         Me.txtCertPass.UseSystemPasswordChar = True
         '
         'lblCertPass
         '
-        resources.ApplyResources(Me.lblCertPass, "lblCertPass")
+        Me.lblCertPass.AutoSize = True
+        Me.lblCertPass.Location = New System.Drawing.Point(7, 22)
         Me.lblCertPass.Name = "lblCertPass"
+        Me.lblCertPass.Size = New System.Drawing.Size(90, 13)
+        Me.lblCertPass.TabIndex = 24
+        Me.lblCertPass.Text = "Passwort (testpw)"
         '
         'frmInit
         '
         Me.AcceptButton = Me.btnOK
-        resources.ApplyResources(Me, "$this")
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.ClientSize = New System.Drawing.Size(577, 546)
         Me.Controls.Add(Me.GroupBox5)
         Me.Controls.Add(Me.btnExtend)
         Me.Controls.Add(Me.GroupBox4)
@@ -311,7 +426,9 @@ Partial Class frmInit
         Me.Controls.Add(Me.gbServer)
         Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.btnOK)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "frmInit"
+        Me.Text = "Einstellungen"
         Me.gbServer.ResumeLayout(False)
         Me.gbServer.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
