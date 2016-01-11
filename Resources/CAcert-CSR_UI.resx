@@ -116,4 +116,109 @@
   <data name="Language_DE" xml:space="preserve">
     <value>Deutsch</value>
   </data>
+  <data name="mnuFile" xml:space="preserve">
+    <value>&amp;Datei</value>
+  </data>
+  <data name="mnuQuit" xml:space="preserve">
+    <value>&amp;Beenden</value>
+  </data>
+  <data name="mnuTools" xml:space="preserve">
+    <value>&amp;Optionen</value>
+  </data>
+  <data name="mnuSettings" xml:space="preserve">
+    <value>&amp;Einstellungen</value>
+  </data>
+  <data name="mnuLanguage" xml:space="preserve">
+    <value>&amp;Sprache</value>
+  </data>
+  <data name="mnuHelp" xml:space="preserve">
+    <value>&amp;Hilfe</value>
+  </data>
+  <data name="mnuInfo" xml:space="preserve">
+    <value>&amp;Info</value>
+  </data>
+  <data name="csr_tpCreate" xml:space="preserve">
+    <value>Erzeugen</value>
+  </data>
+  <data name="csr_lblCommon" xml:space="preserve">
+    <value>Allgemeiner Name</value>
+  </data>
+  <data name="csr_gbTyp" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="csr_rbPrivate" xml:space="preserve">
+    <value>Private</value>
+  </data>
+  <data name="csr_rbOrganisation" xml:space="preserve">
+    <value>Organisation</value>
+  </data>
+  <data name="csr_gbArt" xml:space="preserve">
+    <value>Art</value>
+  </data>
+  <data name="csr_rbClient" xml:space="preserve">
+    <value>Client</value>
+  </data>
+  <data name="csr_rbServer" xml:space="preserve">
+    <value>Server</value>
+  </data>
+  <data name="csr_lblNamen" xml:space="preserve">
+    <value>Weitere Namen</value>
+  </data>
+  <data name="btnClear" xml:space="preserve">
+    <value>Löschen</value>
+  </data>
+  <data name="btnClearAll" xml:space="preserve">
+    <value>Alles Löschen</value>
+  </data>
+  <data name="csr_lblClass" xml:space="preserve">
+    <value>Klasse</value>
+  </data>
+  <data name="csr_btnGenerate" xml:space="preserve">
+    <value>CSR erstellen</value>
+  </data>
+  <data name="csr_btnCAcertSig" xml:space="preserve">
+    <value>Mit CAcert signieren</value>
+  </data>
+  <data name="csr_btnCAcertFin" xml:space="preserve">
+    <value>Mit CAcert fertigstellern</value>
+  </data>
+  <data name="csr_btnCAcertSave" xml:space="preserve">
+    <value>Von CAcert in Datei speichern</value>
+  </data>
+  <data name="csr_strWoStart" xml:space="preserve">
+    <value>Browser Start</value>
+  </data>
+  <data name="csr_msgOpenSSL" xml:space="preserve">
+    <value>OpenSLL wurde nicht gefunden. Bitte installiern Sie es in den Pfad {0} nach.</value>
+  </data>
+  <data name="csr_inputBoxPrompt" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="csr_inputBoxTitle" xml:space="preserve">
+    <value>Weiterer Name</value>
+  </data>
+  <data name="csr_strWoLogin" xml:space="preserve">
+    <value>Anmelden</value>
+  </data>
+  <data name="csr_strWoCSR" xml:space="preserve">
+    <value>CSR Eingabe</value>
+  </data>
+  <data name="csr_msgCCA" xml:space="preserve">
+    <value>Bitte die CCA akzeptieren.</value>
+  </data>
+  <data name="csr_strWoSig" xml:space="preserve">
+    <value>SIG erzeugen</value>
+  </data>
+  <data name="csr_strWoLogout" xml:space="preserve">
+    <value>Abmelden</value>
+  </data>
+  <data name="csr_strWoConfirmation" xml:space="preserve">
+    <value>CSR Bestätigung</value>
+  </data>
+  <data name="csr_msgNotAvailable" xml:space="preserve">
+    <value>Wurde noch nicht umgesetzt.</value>
+  </data>
+  <data name="csr_msgTurnPrivate" xml:space="preserve">
+    <value>Stelel auf Privat um.</value>
+  </data>
 </root>

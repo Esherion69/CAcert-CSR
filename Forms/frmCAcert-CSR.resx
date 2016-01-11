@@ -143,23 +143,17 @@
   <data name="&gt;&gt;lblName.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="DateiToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 20</value>
-  </data>
-  <data name="DateiToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Datei</value>
-  </data>
   <data name="BeendenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 22</value>
   </data>
   <data name="BeendenToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Beenden</value>
   </data>
-  <data name="OptionenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>69, 20</value>
+  <data name="DateiToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 20</value>
   </data>
-  <data name="OptionenToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Optionen</value>
+  <data name="DateiToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Datei</value>
   </data>
   <data name="EinstellungenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>145, 22</value>
@@ -167,11 +161,11 @@
   <data name="EinstellungenToolStripMenuItem.Text" xml:space="preserve">
     <value>&amp;Einstellungen</value>
   </data>
-  <data name="HilfeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 20</value>
+  <data name="OptionenToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 20</value>
   </data>
-  <data name="HilfeToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Hilfe</value>
+  <data name="OptionenToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Optionen</value>
   </data>
   <data name="InfoToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 22</value>
@@ -179,321 +173,11 @@
   <data name="InfoToolStripMenuItem.Text" xml:space="preserve">
     <value>Info</value>
   </data>
-  <data name="&gt;&gt;tpCreate.Name" xml:space="preserve">
-    <value>tpCreate</value>
-  </data>
-  <data name="&gt;&gt;tpCreate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tpCreate.Parent" xml:space="preserve">
-    <value>tcCert</value>
-  </data>
-  <data name="&gt;&gt;tpCreate.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="tcCert.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="tcCert.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 24</value>
-  </data>
-  <data name="tcCert.Size" type="System.Drawing.Size, System.Drawing">
-    <value>324, 395</value>
-  </data>
-  <data name="tcCert.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;tcCert.Name" xml:space="preserve">
-    <value>tcCert</value>
-  </data>
-  <data name="&gt;&gt;tcCert.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tcCert.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;tcCert.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;cbCCA.Name" xml:space="preserve">
-    <value>cbCCA</value>
-  </data>
-  <data name="&gt;&gt;cbCCA.Type" xml:space="preserve">
-    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;cbCCA.Parent" xml:space="preserve">
-    <value>tpCreate</value>
-  </data>
-  <data name="&gt;&gt;cbCCA.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;gbArt.Name" xml:space="preserve">
-    <value>gbArt</value>
-  </data>
-  <data name="&gt;&gt;gbArt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbArt.Parent" xml:space="preserve">
-    <value>tpCreate</value>
-  </data>
-  <data name="&gt;&gt;gbArt.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;gbTyp.Name" xml:space="preserve">
-    <value>gbTyp</value>
-  </data>
-  <data name="&gt;&gt;gbTyp.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbTyp.Parent" xml:space="preserve">
-    <value>tpCreate</value>
-  </data>
-  <data name="&gt;&gt;gbTyp.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;btnCAcertFin.Name" xml:space="preserve">
-    <value>btnCAcertFin</value>
-  </data>
-  <data name="&gt;&gt;btnCAcertFin.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnCAcertFin.Parent" xml:space="preserve">
-    <value>tpCreate</value>
-  </data>
-  <data name="&gt;&gt;btnCAcertFin.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;lblClass.Name" xml:space="preserve">
-    <value>lblClass</value>
-  </data>
-  <data name="&gt;&gt;lblClass.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblClass.Parent" xml:space="preserve">
-    <value>tpCreate</value>
-  </data>
-  <data name="&gt;&gt;lblClass.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;rbClass3.Name" xml:space="preserve">
-    <value>rbClass3</value>
-  </data>
-  <data name="&gt;&gt;rbClass3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rbClass3.Parent" xml:space="preserve">
-    <value>tpCreate</value>
-  </data>
-  <data name="&gt;&gt;rbClass3.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;rbClass1.Name" xml:space="preserve">
-    <value>rbClass1</value>
-  </data>
-  <data name="&gt;&gt;rbClass1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rbClass1.Parent" xml:space="preserve">
-    <value>tpCreate</value>
-  </data>
-  <data name="&gt;&gt;rbClass1.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;btnAll.Name" xml:space="preserve">
-    <value>btnAll</value>
-  </data>
-  <data name="&gt;&gt;btnAll.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnAll.Parent" xml:space="preserve">
-    <value>tpCreate</value>
-  </data>
-  <data name="&gt;&gt;btnAll.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;btnClear.Name" xml:space="preserve">
-    <value>btnClear</value>
-  </data>
-  <data name="&gt;&gt;btnClear.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnClear.Parent" xml:space="preserve">
-    <value>tpCreate</value>
-  </data>
-  <data name="&gt;&gt;btnClear.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;btnCACertSave.Name" xml:space="preserve">
-    <value>btnCACertSave</value>
-  </data>
-  <data name="&gt;&gt;btnCACertSave.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnCACertSave.Parent" xml:space="preserve">
-    <value>tpCreate</value>
-  </data>
-  <data name="&gt;&gt;btnCACertSave.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;btnCAcertSig.Name" xml:space="preserve">
-    <value>btnCAcertSig</value>
-  </data>
-  <data name="&gt;&gt;btnCAcertSig.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnCAcertSig.Parent" xml:space="preserve">
-    <value>tpCreate</value>
-  </data>
-  <data name="&gt;&gt;btnCAcertSig.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;txtCSR.Name" xml:space="preserve">
-    <value>txtCSR</value>
-  </data>
-  <data name="&gt;&gt;txtCSR.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtCSR.Parent" xml:space="preserve">
-    <value>tpCreate</value>
-  </data>
-  <data name="&gt;&gt;txtCSR.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;btnGenerate.Name" xml:space="preserve">
-    <value>btnGenerate</value>
-  </data>
-  <data name="&gt;&gt;btnGenerate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnGenerate.Parent" xml:space="preserve">
-    <value>tpCreate</value>
-  </data>
-  <data name="&gt;&gt;btnGenerate.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;btnMinus.Name" xml:space="preserve">
-    <value>btnMinus</value>
-  </data>
-  <data name="&gt;&gt;btnMinus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnMinus.Parent" xml:space="preserve">
-    <value>tpCreate</value>
-  </data>
-  <data name="&gt;&gt;btnMinus.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;btnPlus.Name" xml:space="preserve">
-    <value>btnPlus</value>
-  </data>
-  <data name="&gt;&gt;btnPlus.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;btnPlus.Parent" xml:space="preserve">
-    <value>tpCreate</value>
-  </data>
-  <data name="&gt;&gt;btnPlus.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;lblNamen.Name" xml:space="preserve">
-    <value>lblNamen</value>
-  </data>
-  <data name="&gt;&gt;lblNamen.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblNamen.Parent" xml:space="preserve">
-    <value>tpCreate</value>
-  </data>
-  <data name="&gt;&gt;lblNamen.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;lstNamen.Name" xml:space="preserve">
-    <value>lstNamen</value>
-  </data>
-  <data name="&gt;&gt;lstNamen.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lstNamen.Parent" xml:space="preserve">
-    <value>tpCreate</value>
-  </data>
-  <data name="&gt;&gt;lstNamen.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;txtCommon.Name" xml:space="preserve">
-    <value>txtCommon</value>
-  </data>
-  <data name="&gt;&gt;txtCommon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtCommon.Parent" xml:space="preserve">
-    <value>tpCreate</value>
-  </data>
-  <data name="&gt;&gt;txtCommon.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="&gt;&gt;lblCommon.Name" xml:space="preserve">
-    <value>lblCommon</value>
-  </data>
-  <data name="&gt;&gt;lblCommon.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;lblCommon.Parent" xml:space="preserve">
-    <value>tpCreate</value>
-  </data>
-  <data name="&gt;&gt;lblCommon.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="&gt;&gt;txtPem.Name" xml:space="preserve">
-    <value>txtPem</value>
-  </data>
-  <data name="&gt;&gt;txtPem.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;txtPem.Parent" xml:space="preserve">
-    <value>tpCreate</value>
-  </data>
-  <data name="&gt;&gt;txtPem.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="&gt;&gt;webCAcert.Name" xml:space="preserve">
-    <value>webCAcert</value>
-  </data>
-  <data name="&gt;&gt;webCAcert.Type" xml:space="preserve">
-    <value>System.Windows.Forms.WebBrowser, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;webCAcert.Parent" xml:space="preserve">
-    <value>tpCreate</value>
-  </data>
-  <data name="&gt;&gt;webCAcert.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="tpCreate.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 22</value>
-  </data>
-  <data name="tpCreate.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
-  </data>
-  <data name="tpCreate.Size" type="System.Drawing.Size, System.Drawing">
-    <value>316, 369</value>
-  </data>
-  <data name="tpCreate.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="tpCreate.Text" xml:space="preserve">
-    <value>Erzeugen</value>
-  </data>
-  <data name="&gt;&gt;tpCreate.Name" xml:space="preserve">
-    <value>tpCreate</value>
-  </data>
-  <data name="&gt;&gt;tpCreate.Type" xml:space="preserve">
-    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;tpCreate.Parent" xml:space="preserve">
-    <value>tcCert</value>
-  </data>
-  <data name="&gt;&gt;tpCreate.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="HilfeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 20</value>
+  </data>
+  <data name="HilfeToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Hilfe</value>
   </data>
   <data name="cbCCA.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -524,54 +208,6 @@
   </data>
   <data name="&gt;&gt;cbCCA.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="&gt;&gt;rbServer.Name" xml:space="preserve">
-    <value>rbServer</value>
-  </data>
-  <data name="&gt;&gt;rbServer.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rbServer.Parent" xml:space="preserve">
-    <value>gbArt</value>
-  </data>
-  <data name="&gt;&gt;rbServer.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;rbClient.Name" xml:space="preserve">
-    <value>rbClient</value>
-  </data>
-  <data name="&gt;&gt;rbClient.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rbClient.Parent" xml:space="preserve">
-    <value>gbArt</value>
-  </data>
-  <data name="&gt;&gt;rbClient.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="gbArt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>13, 82</value>
-  </data>
-  <data name="gbArt.Size" type="System.Drawing.Size, System.Drawing">
-    <value>298, 45</value>
-  </data>
-  <data name="gbArt.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
-  </data>
-  <data name="gbArt.Text" xml:space="preserve">
-    <value>Art</value>
-  </data>
-  <data name="&gt;&gt;gbArt.Name" xml:space="preserve">
-    <value>gbArt</value>
-  </data>
-  <data name="&gt;&gt;gbArt.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;gbArt.Parent" xml:space="preserve">
-    <value>tpCreate</value>
-  </data>
-  <data name="&gt;&gt;gbArt.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="rbServer.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -633,53 +269,29 @@
   <data name="&gt;&gt;rbClient.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;rbOrg.Name" xml:space="preserve">
-    <value>rbOrg</value>
+  <data name="gbArt.Location" type="System.Drawing.Point, System.Drawing">
+    <value>13, 82</value>
   </data>
-  <data name="&gt;&gt;rbOrg.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="gbArt.Size" type="System.Drawing.Size, System.Drawing">
+    <value>298, 45</value>
   </data>
-  <data name="&gt;&gt;rbOrg.Parent" xml:space="preserve">
-    <value>gbTyp</value>
+  <data name="gbArt.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="&gt;&gt;rbOrg.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="gbArt.Text" xml:space="preserve">
+    <value>Art</value>
   </data>
-  <data name="&gt;&gt;rbPrivat.Name" xml:space="preserve">
-    <value>rbPrivat</value>
+  <data name="&gt;&gt;gbArt.Name" xml:space="preserve">
+    <value>gbArt</value>
   </data>
-  <data name="&gt;&gt;rbPrivat.Type" xml:space="preserve">
-    <value>System.Windows.Forms.RadioButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;rbPrivat.Parent" xml:space="preserve">
-    <value>gbTyp</value>
-  </data>
-  <data name="&gt;&gt;rbPrivat.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="gbTyp.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 31</value>
-  </data>
-  <data name="gbTyp.Size" type="System.Drawing.Size, System.Drawing">
-    <value>299, 45</value>
-  </data>
-  <data name="gbTyp.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
-  </data>
-  <data name="gbTyp.Text" xml:space="preserve">
-    <value>Typ</value>
-  </data>
-  <data name="&gt;&gt;gbTyp.Name" xml:space="preserve">
-    <value>gbTyp</value>
-  </data>
-  <data name="&gt;&gt;gbTyp.Type" xml:space="preserve">
+  <data name="&gt;&gt;gbArt.Type" xml:space="preserve">
     <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;gbTyp.Parent" xml:space="preserve">
+  <data name="&gt;&gt;gbArt.Parent" xml:space="preserve">
     <value>tpCreate</value>
   </data>
-  <data name="&gt;&gt;gbTyp.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;gbArt.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="rbOrg.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -741,6 +353,30 @@
   <data name="&gt;&gt;rbPrivat.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="gbTyp.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 31</value>
+  </data>
+  <data name="gbTyp.Size" type="System.Drawing.Size, System.Drawing">
+    <value>299, 45</value>
+  </data>
+  <data name="gbTyp.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="gbTyp.Text" xml:space="preserve">
+    <value>Typ</value>
+  </data>
+  <data name="&gt;&gt;gbTyp.Name" xml:space="preserve">
+    <value>gbTyp</value>
+  </data>
+  <data name="&gt;&gt;gbTyp.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gbTyp.Parent" xml:space="preserve">
+    <value>tpCreate</value>
+  </data>
+  <data name="&gt;&gt;gbTyp.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
   <data name="btnCAcertFin.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
@@ -751,7 +387,7 @@
     <value>300, 23</value>
   </data>
   <data name="btnCAcertFin.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+    <value>16</value>
   </data>
   <data name="btnCAcertFin.Text" xml:space="preserve">
     <value>Mit CAcert fertigstellen</value>
@@ -855,31 +491,28 @@
   <data name="&gt;&gt;rbClass1.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="btnAll.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="btnClearAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 194</value>
   </data>
-  <data name="btnAll.Location" type="System.Drawing.Point, System.Drawing">
-    <value>9, 195</value>
-  </data>
-  <data name="btnAll.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="btnClearAll.Size" type="System.Drawing.Size, System.Drawing">
     <value>85, 23</value>
   </data>
-  <data name="btnAll.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+  <data name="btnClearAll.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="btnAll.Text" xml:space="preserve">
-    <value>Alles Löschen</value>
+  <data name="btnClearAll.Text" xml:space="preserve">
+    <value>Alles löschen</value>
   </data>
-  <data name="&gt;&gt;btnAll.Name" xml:space="preserve">
-    <value>btnAll</value>
+  <data name="&gt;&gt;btnClearAll.Name" xml:space="preserve">
+    <value>btnClearAll</value>
   </data>
-  <data name="&gt;&gt;btnAll.Type" xml:space="preserve">
+  <data name="&gt;&gt;btnClearAll.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;btnAll.Parent" xml:space="preserve">
+  <data name="&gt;&gt;btnClearAll.Parent" xml:space="preserve">
     <value>tpCreate</value>
   </data>
-  <data name="&gt;&gt;btnAll.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;btnClearAll.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
   <data name="btnClear.Enabled" type="System.Boolean, mscorlib">
@@ -892,7 +525,7 @@
     <value>85, 22</value>
   </data>
   <data name="btnClear.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>5</value>
   </data>
   <data name="btnClear.Text" xml:space="preserve">
     <value>Löschen</value>
@@ -919,7 +552,7 @@
     <value>301, 23</value>
   </data>
   <data name="btnCACertSave.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+    <value>17</value>
   </data>
   <data name="btnCACertSave.Text" xml:space="preserve">
     <value>Von CAcert in Datei speichern</value>
@@ -946,7 +579,7 @@
     <value>300, 23</value>
   </data>
   <data name="btnCAcertSig.TabIndex" type="System.Int32, mscorlib">
-    <value>16</value>
+    <value>15</value>
   </data>
   <data name="btnCAcertSig.Text" xml:space="preserve">
     <value>Mit CAcert signieren</value>
@@ -997,7 +630,7 @@
     <value>300, 23</value>
   </data>
   <data name="btnGenerate.TabIndex" type="System.Int32, mscorlib">
-    <value>18</value>
+    <value>14</value>
   </data>
   <data name="btnGenerate.Text" xml:space="preserve">
     <value>CSR erstellen</value>
@@ -1024,7 +657,7 @@
     <value>40, 23</value>
   </data>
   <data name="btnMinus.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="btnMinus.Text" xml:space="preserve">
     <value>-</value>
@@ -1051,7 +684,7 @@
     <value>40, 23</value>
   </data>
   <data name="btnPlus.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="btnPlus.Text" xml:space="preserve">
     <value>+</value>
@@ -1126,7 +759,7 @@
     <value>209, 20</value>
   </data>
   <data name="txtCommon.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;txtCommon.Name" xml:space="preserve">
     <value>txtCommon</value>
@@ -1150,7 +783,7 @@
     <value>92, 13</value>
   </data>
   <data name="lblCommon.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>0</value>
   </data>
   <data name="lblCommon.Text" xml:space="preserve">
     <value>Allgemeiner Name</value>
@@ -1201,7 +834,7 @@
     <value>1051, 198</value>
   </data>
   <data name="webCAcert.TabIndex" type="System.Int32, mscorlib">
-    <value>33</value>
+    <value>18</value>
   </data>
   <data name="&gt;&gt;webCAcert.Name" xml:space="preserve">
     <value>webCAcert</value>
@@ -1214,6 +847,58 @@
   </data>
   <data name="&gt;&gt;webCAcert.ZOrder" xml:space="preserve">
     <value>20</value>
+  </data>
+  <data name="tpCreate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tpCreate.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="tpCreate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>316, 369</value>
+  </data>
+  <data name="tpCreate.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="tpCreate.Text" xml:space="preserve">
+    <value>Erzeugen</value>
+  </data>
+  <data name="&gt;&gt;tpCreate.Name" xml:space="preserve">
+    <value>tpCreate</value>
+  </data>
+  <data name="&gt;&gt;tpCreate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpCreate.Parent" xml:space="preserve">
+    <value>tcCert</value>
+  </data>
+  <data name="&gt;&gt;tpCreate.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tcCert.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tcCert.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 24</value>
+  </data>
+  <data name="tcCert.Size" type="System.Drawing.Size, System.Drawing">
+    <value>324, 395</value>
+  </data>
+  <data name="tcCert.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tcCert.Name" xml:space="preserve">
+    <value>tcCert</value>
+  </data>
+  <data name="&gt;&gt;tcCert.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tcCert.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tcCert.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <metadata name="ofdDatei.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
@@ -1242,48 +927,6 @@
   <metadata name="MenuStrip.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>115, 17</value>
   </metadata>
-  <data name="DateiToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>46, 20</value>
-  </data>
-  <data name="DateiToolStripMenuItem1.Text" xml:space="preserve">
-    <value>&amp;Datei</value>
-  </data>
-  <data name="EinstellungenToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="EinstellungenToolStripMenuItem1.Text" xml:space="preserve">
-    <value>&amp;Einstellungen</value>
-  </data>
-  <data name="DeutschToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="DeutschToolStripMenuItem.Text" xml:space="preserve">
-    <value>Deutsch</value>
-  </data>
-  <data name="EnglischToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="EnglischToolStripMenuItem.Text" xml:space="preserve">
-    <value>Englisch</value>
-  </data>
-  <data name="SpracheToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>152, 22</value>
-  </data>
-  <data name="SpracheToolStripMenuItem.Text" xml:space="preserve">
-    <value>Sprache</value>
-  </data>
-  <data name="OptionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>56, 20</value>
-  </data>
-  <data name="OptionToolStripMenuItem.Text" xml:space="preserve">
-    <value>&amp;Option</value>
-  </data>
-  <data name="HilfeToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 20</value>
-  </data>
-  <data name="HilfeToolStripMenuItem1.Text" xml:space="preserve">
-    <value>&amp;Hilfe</value>
-  </data>
   <data name="MenuStrip.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
@@ -1308,11 +951,53 @@
   <data name="&gt;&gt;MenuStrip.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="DateiToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>46, 20</value>
+  </data>
+  <data name="DateiToolStripMenuItem1.Text" xml:space="preserve">
+    <value>&amp;Datei</value>
+  </data>
   <data name="BeendenToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>120, 22</value>
   </data>
   <data name="BeendenToolStripMenuItem1.Text" xml:space="preserve">
     <value>&amp;Beenden</value>
+  </data>
+  <data name="OptionToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>56, 20</value>
+  </data>
+  <data name="OptionToolStripMenuItem.Text" xml:space="preserve">
+    <value>&amp;Option</value>
+  </data>
+  <data name="EinstellungenToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="EinstellungenToolStripMenuItem1.Text" xml:space="preserve">
+    <value>&amp;Einstellungen</value>
+  </data>
+  <data name="DeutschToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 22</value>
+  </data>
+  <data name="DeutschToolStripMenuItem.Text" xml:space="preserve">
+    <value>Deutsch</value>
+  </data>
+  <data name="EnglischToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 22</value>
+  </data>
+  <data name="EnglischToolStripMenuItem.Text" xml:space="preserve">
+    <value>Englisch</value>
+  </data>
+  <data name="SpracheToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 22</value>
+  </data>
+  <data name="SpracheToolStripMenuItem.Text" xml:space="preserve">
+    <value>Sprache</value>
+  </data>
+  <data name="HilfeToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>44, 20</value>
+  </data>
+  <data name="HilfeToolStripMenuItem1.Text" xml:space="preserve">
+    <value>&amp;Hilfe</value>
   </data>
   <data name="InfoToolStripMenuItem1.Size" type="System.Drawing.Size, System.Drawing">
     <value>95, 22</value>
@@ -1818,9 +1503,6 @@
         //8=
 </value>
   </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
   <data name="$this.Text" xml:space="preserve">
     <value>CAcert - CSR</value>
   </data>
@@ -1890,24 +1572,6 @@
   <data name="&gt;&gt;EinstellungenToolStripMenuItem1.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;HilfeToolStripMenuItem1.Name" xml:space="preserve">
-    <value>HilfeToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;HilfeToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;InfoToolStripMenuItem1.Name" xml:space="preserve">
-    <value>InfoToolStripMenuItem1</value>
-  </data>
-  <data name="&gt;&gt;InfoToolStripMenuItem1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Timer1.Name" xml:space="preserve">
-    <value>Timer1</value>
-  </data>
-  <data name="&gt;&gt;Timer1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="&gt;&gt;SpracheToolStripMenuItem.Name" xml:space="preserve">
     <value>SpracheToolStripMenuItem</value>
   </data>
@@ -1925,6 +1589,24 @@
   </data>
   <data name="&gt;&gt;EnglischToolStripMenuItem.Type" xml:space="preserve">
     <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;HilfeToolStripMenuItem1.Name" xml:space="preserve">
+    <value>HilfeToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;HilfeToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;InfoToolStripMenuItem1.Name" xml:space="preserve">
+    <value>InfoToolStripMenuItem1</value>
+  </data>
+  <data name="&gt;&gt;InfoToolStripMenuItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Timer1.Name" xml:space="preserve">
+    <value>Timer1</value>
+  </data>
+  <data name="&gt;&gt;Timer1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Timer, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmCAcertCSR</value>

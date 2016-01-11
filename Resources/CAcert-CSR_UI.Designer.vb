@@ -65,11 +65,263 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Löschen ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property btnClear() As String
+            Get
+                Return ResourceManager.GetString("btnClear", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Alles Löschen ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property btnClearAll() As String
+            Get
+                Return ResourceManager.GetString("btnClearAll", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Sucht eine lokalisierte Zeichenfolge, die &amp;OK ähnelt.
         '''</summary>
         Friend Shared ReadOnly Property btnOK() As String
             Get
                 Return ResourceManager.GetString("btnOK", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Mit CAcert fertigstellern ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_btnCAcertFin() As String
+            Get
+                Return ResourceManager.GetString("csr_btnCAcertFin", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Von CAcert in Datei speichern ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_btnCAcertSave() As String
+            Get
+                Return ResourceManager.GetString("csr_btnCAcertSave", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Mit CAcert signieren ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_btnCAcertSig() As String
+            Get
+                Return ResourceManager.GetString("csr_btnCAcertSig", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die CSR erstellen ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_btnGenerate() As String
+            Get
+                Return ResourceManager.GetString("csr_btnGenerate", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Art ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_gbArt() As String
+            Get
+                Return ResourceManager.GetString("csr_gbArt", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Typ ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_gbTyp() As String
+            Get
+                Return ResourceManager.GetString("csr_gbTyp", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Name: ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_inputBoxPrompt() As String
+            Get
+                Return ResourceManager.GetString("csr_inputBoxPrompt", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Weiterer Name ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_inputBoxTitle() As String
+            Get
+                Return ResourceManager.GetString("csr_inputBoxTitle", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Klasse ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_lblClass() As String
+            Get
+                Return ResourceManager.GetString("csr_lblClass", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Allgemeiner Name ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_lblCommon() As String
+            Get
+                Return ResourceManager.GetString("csr_lblCommon", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Weitere Namen ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_lblNamen() As String
+            Get
+                Return ResourceManager.GetString("csr_lblNamen", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Bitte die CCA akzeptieren. ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_msgCCA() As String
+            Get
+                Return ResourceManager.GetString("csr_msgCCA", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Wurde noch nicht umgesetzt. ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_msgNotAvailable() As String
+            Get
+                Return ResourceManager.GetString("csr_msgNotAvailable", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die OpenSLL wurde nicht gefunden. Bitte installiern Sie es in den Pfad {0} nach. ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_msgOpenSSL() As String
+            Get
+                Return ResourceManager.GetString("csr_msgOpenSSL", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Stelel auf Privat um. ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_msgTurnPrivate() As String
+            Get
+                Return ResourceManager.GetString("csr_msgTurnPrivate", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Client ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_rbClient() As String
+            Get
+                Return ResourceManager.GetString("csr_rbClient", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Organisation ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_rbOrganisation() As String
+            Get
+                Return ResourceManager.GetString("csr_rbOrganisation", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Private ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_rbPrivate() As String
+            Get
+                Return ResourceManager.GetString("csr_rbPrivate", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Server ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_rbServer() As String
+            Get
+                Return ResourceManager.GetString("csr_rbServer", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die CSR Bestätigung ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_strWoConfirmation() As String
+            Get
+                Return ResourceManager.GetString("csr_strWoConfirmation", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die CSR Eingabe ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_strWoCSR() As String
+            Get
+                Return ResourceManager.GetString("csr_strWoCSR", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Anmelden ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_strWoLogin() As String
+            Get
+                Return ResourceManager.GetString("csr_strWoLogin", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Abmelden ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_strWoLogout() As String
+            Get
+                Return ResourceManager.GetString("csr_strWoLogout", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die SIG erzeugen ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_strWoSig() As String
+            Get
+                Return ResourceManager.GetString("csr_strWoSig", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Browser Start ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_strWoStart() As String
+            Get
+                Return ResourceManager.GetString("csr_strWoStart", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Erzeugen ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property csr_tpCreate() As String
+            Get
+                Return ResourceManager.GetString("csr_tpCreate", resourceCulture)
             End Get
         End Property
         
@@ -88,6 +340,69 @@ Namespace My.Resources
         Friend Shared ReadOnly Property Language_EN() As String
             Get
                 Return ResourceManager.GetString("Language_EN", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die &amp;Datei ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property mnuFile() As String
+            Get
+                Return ResourceManager.GetString("mnuFile", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die &amp;Hilfe ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property mnuHelp() As String
+            Get
+                Return ResourceManager.GetString("mnuHelp", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die &amp;Info ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property mnuInfo() As String
+            Get
+                Return ResourceManager.GetString("mnuInfo", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die &amp;Sprache ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property mnuLanguage() As String
+            Get
+                Return ResourceManager.GetString("mnuLanguage", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die &amp;Beenden ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property mnuQuit() As String
+            Get
+                Return ResourceManager.GetString("mnuQuit", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die &amp;Einstellungen ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property mnuSettings() As String
+            Get
+                Return ResourceManager.GetString("mnuSettings", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die &amp;Optionen ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property mnuTools() As String
+            Get
+                Return ResourceManager.GetString("mnuTools", resourceCulture)
             End Get
         End Property
     End Class
