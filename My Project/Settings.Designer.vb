@@ -389,13 +389,25 @@ Namespace My
                 Me("certPass") = value
             End Set
         End Property
-        
-        <Global.System.Configuration.UserScopedSettingAttribute(),  _
-         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),  _
-         Global.System.Configuration.DefaultSettingValueAttribute("de")>  _
+
+        <Global.System.Configuration.UserScopedSettingAttribute(),
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
+         Global.System.Configuration.DefaultSettingValueAttribute("\Andreas_Terpotiz")>
+        Public Property DataDir() As String
+            Get
+                Return CType(Me("DataDir"), String)
+            End Get
+            Set
+                Me("DataDir") = Value
+            End Set
+        End Property
+
+        <Global.System.Configuration.UserScopedSettingAttribute(),
+         Global.System.Diagnostics.DebuggerNonUserCodeAttribute(),
+        Global.System.Configuration.DefaultSettingValueAttribute("de")>
         Public Property Language() As String
             Get
-                Return CType(Me("Language"),String)
+                Return CType(Me("Language"), String)
             End Get
             Set
                 Me("Language") = value

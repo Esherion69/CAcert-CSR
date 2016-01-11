@@ -11,8 +11,8 @@ Imports System.Runtime.InteropServices
 ' Die Werte der Assemblyattribute überprüfen
 
 <Assembly: AssemblyTitle("CAcert-CSR")> 
-<Assembly: AssemblyDescription("CSR anfragen mit CAcert signieren")> 
-<Assembly: AssemblyCompany("Andreas Terptoiz")> 
+<Assembly: AssemblyDescription("CSR anfragen mit CAcert signieren")>
+<Assembly: AssemblyCompany("Andreas Terpotiz")>
 <Assembly: AssemblyProduct("CAcert-CSR")> 
 <Assembly: AssemblyCopyright("© 2013 Andreas Terpotiz")> 
 <Assembly: AssemblyTrademark("")> 
