@@ -713,11 +713,38 @@ Namespace My.Resources
         End Property
         
         '''<summary>
-        '''  Sucht eine lokalisierte Zeichenfolge, die Leeres Passwort nicht erlaunt ähnelt.
+        '''  Sucht eine lokalisierte Zeichenfolge, die Für {0} sind max {1} Zeichen erlaubt. Aktuelle Länge {2} ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_maxChar() As String
+            Get
+                Return ResourceManager.GetString("set_maxChar", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Leeres Passwort nicht erlaubt ähnelt.
         '''</summary>
         Friend Shared ReadOnly Property set_msgBlankPassword() As String
             Get
                 Return ResourceManager.GetString("set_msgBlankPassword", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Bitte passen Sie die Länge des aktuellen Feldes an die vorgaben an. ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_msgLostFocus() As String
+            Get
+                Return ResourceManager.GetString("set_msgLostFocus", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Die erlaubte Länge für {0} ist max {1} Zeichen. ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_msgMaxChar() As String
+            Get
+                Return ResourceManager.GetString("set_msgMaxChar", resourceCulture)
             End Get
         End Property
         

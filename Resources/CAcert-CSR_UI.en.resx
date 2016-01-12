@@ -291,7 +291,7 @@
     <value>Organisation</value>
   </data>
   <data name="set_lblOrgUnit" xml:space="preserve">
-    <value>Organisation Unit</value>
+    <value>Organisation unit</value>
   </data>
   <data name="set_lblStreet1" xml:space="preserve">
     <value>Address 1</value>
@@ -340,5 +340,14 @@
   </data>
   <data name="set_lblCertPassword" xml:space="preserve">
     <value>Password (testpw)</value>
+  </data>
+  <data name="set_maxChar" xml:space="preserve">
+    <value>Max {1} characters are allowed for {0}. Current length {2}</value>
+  </data>
+  <data name="set_msgMaxChar" xml:space="preserve">
+    <value>The allowed length of {0} is max  {1} characters.</value>
+  </data>
+  <data name="set_msgLostFocus" xml:space="preserve">
+    <value>Please adjust the length of the current field to the requirements.</value>
   </data>
 </root>

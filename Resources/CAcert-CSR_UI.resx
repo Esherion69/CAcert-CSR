@@ -339,6 +339,15 @@
     <value>Passwort (testpw)</value>
   </data>
   <data name="set_msgBlankPassword" xml:space="preserve">
-    <value>Leeres Passwort nicht erlaunt</value>
+    <value>Leeres Passwort nicht erlaubt</value>
+  </data>
+  <data name="set_maxChar" xml:space="preserve">
+    <value>Für {0} sind max {1} Zeichen erlaubt. Aktuelle Länge {2}</value>
+  </data>
+  <data name="set_msgMaxChar" xml:space="preserve">
+    <value>Die erlaubte Länge für {0} ist max {1} Zeichen.</value>
+  </data>
+  <data name="set_msgLostFocus" xml:space="preserve">
+    <value>Bitte passen Sie die Länge des aktuellen Feldes an die vorgaben an.</value>
   </data>
 </root>

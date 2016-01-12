@@ -1,6 +1,8 @@
 ﻿Imports System.Globalization
 
 Public Class frmInit
+    Private blnError As Boolean = False
+    Private blnFocus As Boolean = True
 
     Private Sub frmInit_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         txtSSL.Text = My.Settings.ssl
@@ -45,6 +47,7 @@ Public Class frmInit
         Me.lblCity.Text = My.Resources.CAcert_CSR_UI.set_lblTown
         Me.lblState.Text = My.Resources.CAcert_CSR_UI.set_lblState
         Me.lblCountry.Text = My.Resources.CAcert_CSR_UI.set_lblCountry
+        Me.lblInfo.Text = ""
 
         Me.gbServer.Text = My.Resources.CAcert_CSR_UI.set_gbEnvironment
         Me.rbProd.Text = My.Resources.CAcert_CSR_UI.set_rbProductive
@@ -107,5 +110,60 @@ Public Class frmInit
             txtCertPass.Focus()
         End If
     End Sub
+
+    Private Sub txtOrg_GotFocus(sender As Object, e As EventArgs) Handles txtOrg.GotFocus, txtOrg.TextChanged, _
+        txtDep.GotFocus, txtDep.TextChanged, txtState.GotFocus, txtState.TextChanged, txtCountry.GotFocus, txtCountry.TextChanged, txtCity.GotFocus, txtCity.TextChanged
+        Dim txt As TextBox = DirectCast(sender, TextBox)
+        Dim strName As String = txt.Name
+        Dim intLength As Integer = 0
+        Dim strType As String = ""
+        Dim strText As String = ""
+        Select Case strName
+            Case "txtOrg"
+                intLength = 64
+                strType = My.Resources.CAcert_CSR_UI.set_lblOrganisation & " (O)"
+                strText = txt.Text
+            Case "txtDep"
+                intLength = 64
+                strType = My.Resources.CAcert_CSR_UI.set_lblOrgUnit & " (OU)"
+                strText = txt.Text
+            Case "txtState"
+                intLength = 128
+                strType = My.Resources.CAcert_CSR_UI.set_lblState & " (ST)"
+                strText = txt.Text
+            Case "txtCountry"
+                intLength = 2
+                strType = My.Resources.CAcert_CSR_UI.set_lblCountry & " (C)"
+                strText = txt.Text
+            Case "txtCity"
+                intLength = 128
+                strType = My.Resources.CAcert_CSR_UI.set_lblTown & " (L)"
+                strText = txt.Text
+        End Select
+
+        If intLength < strText.Length And blnError = False Then
+            blnError = True
+            blnFocus = False
+            MessageBox.Show(String.Format(My.Resources.CAcert_CSR_UI.set_msgMaxChar, strType, intLength), My.Resources.CAcert_CSR_UI.msgTitleError)
+            blnFocus = True
+            txt.BackColor = Color.LightSalmon
+        ElseIf intLength >= strText.Length And blnError = True Then
+            blnError = False
+            txt.BackColor = Color.White
+        End If
+
+        Me.lblInfo.Text = String.Format(My.Resources.CAcert_CSR_UI.set_maxChar, strType, intLength, strText.Length)
+
+    End Sub
+
+    Private Sub txtOrg_LostFocus(sender As Object, e As EventArgs) Handles txtOrg.LostFocus, txtDep.LostFocus, txtState.LostFocus, txtCountry.LostFocus, txtCity.LostFocus
+        Dim txt As TextBox = DirectCast(sender, TextBox)
+        Me.lblInfo.Text = ""
+        If blnError = True And blnFocus = True Then
+            MessageBox.Show(My.Resources.CAcert_CSR_UI.set_msgLostFocus)
+            txt.Select()
+        End If
+    End Sub
+
 
 End Class

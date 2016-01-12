@@ -60,6 +60,7 @@ Partial Class frmInit
         Me.gbCertificate = New System.Windows.Forms.GroupBox()
         Me.txtCertPass = New System.Windows.Forms.TextBox()
         Me.lblCertPass = New System.Windows.Forms.Label()
+        Me.lblInfo = New System.Windows.Forms.Label()
         Me.gbServer.SuspendLayout()
         Me.gbAddress.SuspendLayout()
         Me.gbOpenSSL.SuspendLayout()
@@ -85,7 +86,7 @@ Partial Class frmInit
         '
         'btnOK
         '
-        Me.btnOK.Location = New System.Drawing.Point(487, 511)
+        Me.btnOK.Location = New System.Drawing.Point(487, 539)
         Me.btnOK.Name = "btnOK"
         Me.btnOK.Size = New System.Drawing.Size(83, 23)
         Me.btnOK.TabIndex = 26
@@ -290,7 +291,7 @@ Partial Class frmInit
         Me.gbServer.BackColor = System.Drawing.Color.Lime
         Me.gbServer.Controls.Add(Me.rbTest)
         Me.gbServer.Controls.Add(Me.rbProd)
-        Me.gbServer.Location = New System.Drawing.Point(12, 326)
+        Me.gbServer.Location = New System.Drawing.Point(12, 354)
         Me.gbServer.Name = "gbServer"
         Me.gbServer.Size = New System.Drawing.Size(469, 48)
         Me.gbServer.TabIndex = 27
@@ -320,6 +321,7 @@ Partial Class frmInit
         'gbAddress
         '
         Me.gbAddress.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.gbAddress.Controls.Add(Me.lblInfo)
         Me.gbAddress.Controls.Add(Me.txtPlz)
         Me.gbAddress.Controls.Add(Me.txtAdr3)
         Me.gbAddress.Controls.Add(Me.txtAdr2)
@@ -340,7 +342,7 @@ Partial Class frmInit
         Me.gbAddress.Controls.Add(Me.lblCountry)
         Me.gbAddress.Location = New System.Drawing.Point(12, 66)
         Me.gbAddress.Name = "gbAddress"
-        Me.gbAddress.Size = New System.Drawing.Size(469, 254)
+        Me.gbAddress.Size = New System.Drawing.Size(469, 282)
         Me.gbAddress.TabIndex = 28
         Me.gbAddress.TabStop = False
         Me.gbAddress.Text = "Adresse"
@@ -364,7 +366,7 @@ Partial Class frmInit
         Me.gbUser.Controls.Add(Me.lblPass)
         Me.gbUser.Controls.Add(Me.txtMail)
         Me.gbUser.Controls.Add(Me.lblMail)
-        Me.gbUser.Location = New System.Drawing.Point(12, 389)
+        Me.gbUser.Location = New System.Drawing.Point(12, 417)
         Me.gbUser.Name = "gbUser"
         Me.gbUser.Size = New System.Drawing.Size(469, 88)
         Me.gbUser.TabIndex = 30
@@ -374,7 +376,7 @@ Partial Class frmInit
         'btnExtend
         '
         Me.btnExtend.BackColor = System.Drawing.Color.Lime
-        Me.btnExtend.Location = New System.Drawing.Point(487, 326)
+        Me.btnExtend.Location = New System.Drawing.Point(487, 354)
         Me.btnExtend.Name = "btnExtend"
         Me.btnExtend.Size = New System.Drawing.Size(83, 23)
         Me.btnExtend.TabIndex = 31
@@ -386,7 +388,7 @@ Partial Class frmInit
         Me.gbCertificate.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.gbCertificate.Controls.Add(Me.txtCertPass)
         Me.gbCertificate.Controls.Add(Me.lblCertPass)
-        Me.gbCertificate.Location = New System.Drawing.Point(12, 484)
+        Me.gbCertificate.Location = New System.Drawing.Point(12, 512)
         Me.gbCertificate.Name = "gbCertificate"
         Me.gbCertificate.Size = New System.Drawing.Size(469, 50)
         Me.gbCertificate.TabIndex = 32
@@ -412,12 +414,21 @@ Partial Class frmInit
         Me.lblCertPass.TabIndex = 24
         Me.lblCertPass.Text = "Passwort (testpw)"
         '
+        'lblInfo
+        '
+        Me.lblInfo.AutoSize = True
+        Me.lblInfo.Location = New System.Drawing.Point(116, 252)
+        Me.lblInfo.Name = "lblInfo"
+        Me.lblInfo.Size = New System.Drawing.Size(39, 13)
+        Me.lblInfo.TabIndex = 20
+        Me.lblInfo.Text = "Label1"
+        '
         'frmInit
         '
         Me.AcceptButton = Me.btnOK
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(577, 546)
+        Me.ClientSize = New System.Drawing.Size(577, 564)
         Me.Controls.Add(Me.gbCertificate)
         Me.Controls.Add(Me.btnExtend)
         Me.Controls.Add(Me.gbUser)
@@ -479,4 +490,5 @@ Partial Class frmInit
     Friend WithEvents gbCertificate As GroupBox
     Friend WithEvents txtCertPass As TextBox
     Friend WithEvents lblCertPass As Label
+    Friend WithEvents lblInfo As System.Windows.Forms.Label
 End Class
