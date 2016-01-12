@@ -1050,10 +1050,4 @@
         ////////////////////////////////////////////////////////
 </value>
   </data>
-  <data name="TextBoxDescription.Text" xml:space="preserve">
-    <value>Beschreibung:
-
-(Der Text für die Bezeichnung wird zur Laufzeit durch die Assemblyinformationen der Anwendung ersetzt.
-Passen Sie die Assemblyinformationen der Anwendung im Anwendungsbereich des Projekt-Designers an.)</value>
-  </data>
 </root>
