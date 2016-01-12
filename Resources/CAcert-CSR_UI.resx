@@ -269,4 +269,76 @@
   <data name="msgTitleError" xml:space="preserve">
     <value>Fehler</value>
   </data>
+  <data name="btnSearch" xml:space="preserve">
+    <value>Durchsuchen</value>
+  </data>
+  <data name="btnExtend" xml:space="preserve">
+    <value>Erweitern</value>
+  </data>
+  <data name="set_Title" xml:space="preserve">
+    <value>Einstellungen</value>
+  </data>
+  <data name="set_gbOpenSSL" xml:space="preserve">
+    <value>OpenSLL</value>
+  </data>
+  <data name="set_lblOpenSSL" xml:space="preserve">
+    <value>OpenSSL Pfad</value>
+  </data>
+  <data name="set_gbAddress" xml:space="preserve">
+    <value>Adresse</value>
+  </data>
+  <data name="set_lblOrganisation" xml:space="preserve">
+    <value>Organisation</value>
+  </data>
+  <data name="set_lblOrgUnit" xml:space="preserve">
+    <value>Abteilung</value>
+  </data>
+  <data name="set_lblStreet1" xml:space="preserve">
+    <value>Adresse 1</value>
+  </data>
+  <data name="set_lblStreet2" xml:space="preserve">
+    <value>Adresse 2</value>
+  </data>
+  <data name="set_lblStreet3" xml:space="preserve">
+    <value>Adresse 3</value>
+  </data>
+  <data name="ste_lblZip" xml:space="preserve">
+    <value>Postleitzahl</value>
+  </data>
+  <data name="set_lblTown" xml:space="preserve">
+    <value>Ort</value>
+  </data>
+  <data name="set_lblState" xml:space="preserve">
+    <value>Bundesland / Bezirk</value>
+  </data>
+  <data name="set_lblCountry" xml:space="preserve">
+    <value>Land / Staat</value>
+  </data>
+  <data name="set_gbEnvironment" xml:space="preserve">
+    <value>Sevrer Umgebung</value>
+  </data>
+  <data name="set_rbProductive" xml:space="preserve">
+    <value>Produktiv</value>
+  </data>
+  <data name="set_rbTest" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="set_gbUser" xml:space="preserve">
+    <value>Benutzer</value>
+  </data>
+  <data name="set_lblEmail" xml:space="preserve">
+    <value>E-Mail</value>
+  </data>
+  <data name="set_lblPassword" xml:space="preserve">
+    <value>Passwort</value>
+  </data>
+  <data name="ste_gbCertificate" xml:space="preserve">
+    <value>Zertifikat</value>
+  </data>
+  <data name="set_lblCertPassword" xml:space="preserve">
+    <value>Passwort (testpw)</value>
+  </data>
+  <data name="set_msgBlankPassword" xml:space="preserve">
+    <value>Leeres Passwort nicht erlaunt</value>
+  </data>
 </root>

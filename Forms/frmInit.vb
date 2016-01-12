@@ -1,4 +1,6 @@
-﻿Public Class frmInit
+﻿Imports System.Globalization
+
+Public Class frmInit
 
     Private Sub frmInit_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         txtSSL.Text = My.Settings.ssl
@@ -24,6 +26,41 @@
         txtPass.Text = My.Settings.Password
 
         txtCertPass.Text = My.Settings.certPass
+
+        'Translation
+        System.Threading.Thread.CurrentThread.CurrentUICulture = CultureInfo.GetCultureInfo(My.Settings.Language)
+
+        Me.Text = My.Resources.CAcert_CSR_UI.set_Title
+
+        Me.gbOpenSSL.Text = My.Resources.CAcert_CSR_UI.set_gbOpenSSL
+        Me.lblSSL.Text = My.Resources.CAcert_CSR_UI.set_lblOpenSSL
+
+        Me.gbAddress.Text = My.Resources.CAcert_CSR_UI.set_gbAddress
+        Me.lblOrg.Text = My.Resources.CAcert_CSR_UI.set_lblOrganisation
+        Me.lblDep.Text = My.Resources.CAcert_CSR_UI.set_lblOrgUnit
+        Me.lblAdr1.Text = My.Resources.CAcert_CSR_UI.set_lblStreet1
+        Me.lblAdr2.Text = My.Resources.CAcert_CSR_UI.set_lblStreet2
+        Me.lblAdr3.Text = My.Resources.CAcert_CSR_UI.set_lblStreet3
+        Me.lblPlz.Text = My.Resources.CAcert_CSR_UI.ste_lblZip
+        Me.lblCity.Text = My.Resources.CAcert_CSR_UI.set_lblTown
+        Me.lblState.Text = My.Resources.CAcert_CSR_UI.set_lblState
+        Me.lblCountry.Text = My.Resources.CAcert_CSR_UI.set_lblCountry
+
+        Me.gbServer.Text = My.Resources.CAcert_CSR_UI.set_gbEnvironment
+        Me.rbProd.Text = My.Resources.CAcert_CSR_UI.set_rbProductive
+        Me.rbTest.Text = My.Resources.CAcert_CSR_UI.set_rbTest
+
+        Me.gbUser.Text = My.Resources.CAcert_CSR_UI.set_gbUser
+        Me.lblMail.Text = My.Resources.CAcert_CSR_UI.set_lblEmail
+        Me.lblPass.Text = My.Resources.CAcert_CSR_UI.set_lblPassword
+
+        Me.gbCertificate.Text = My.Resources.CAcert_CSR_UI.ste_gbCertificate
+        Me.lblCertPass.Text = My.Resources.CAcert_CSR_UI.set_lblCertPassword
+
+        Me.btnSearch.Text = My.Resources.CAcert_CSR_UI.btnSearch
+        Me.btnExtend.Text = My.Resources.CAcert_CSR_UI.btnExtend
+        Me.btnOK.Text = My.Resources.CAcert_CSR_UI.btnOK
+
     End Sub
 
     Private Sub btnSearch_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnSearch.Click
@@ -65,8 +102,8 @@
     End Sub
 
     Private Sub txtCertPass_TextChanged(sender As Object, e As EventArgs) Handles txtCertPass.TextChanged
-        If txtCertPass.Text = "" Then
-            MsgBox("Leeres Passwort nicht erlaubt", MsgBoxStyle.Critical, "Fehler")
+        If txtCertPass.Text.Trim = "" Then
+            MessageBox.Show(My.Resources.CAcert_CSR_UI.set_msgBlankPassword, My.Resources.CAcert_CSR_UI.msgTitleError, MessageBoxButtons.OK, MessageBoxIcon.Error)
             txtCertPass.Focus()
         End If
     End Sub
