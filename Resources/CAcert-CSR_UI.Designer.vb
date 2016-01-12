@@ -83,11 +83,29 @@ Namespace My.Resources
         End Property
         
         '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Erweitern ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property btnExtend() As String
+            Get
+                Return ResourceManager.GetString("btnExtend", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
         '''  Sucht eine lokalisierte Zeichenfolge, die &amp;OK ähnelt.
         '''</summary>
         Friend Shared ReadOnly Property btnOK() As String
             Get
                 Return ResourceManager.GetString("btnOK", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Durchsuchen ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property btnSearch() As String
+            Get
+                Return ResourceManager.GetString("btnSearch", resourceCulture)
             End Get
         End Property
         
@@ -547,6 +565,231 @@ Namespace My.Resources
         Friend Shared ReadOnly Property msgTitleError() As String
             Get
                 Return ResourceManager.GetString("msgTitleError", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Adresse ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_gbAddress() As String
+            Get
+                Return ResourceManager.GetString("set_gbAddress", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Sevrer Umgebung ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_gbEnvironment() As String
+            Get
+                Return ResourceManager.GetString("set_gbEnvironment", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die OpenSLL ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_gbOpenSSL() As String
+            Get
+                Return ResourceManager.GetString("set_gbOpenSSL", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Benutzer ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_gbUser() As String
+            Get
+                Return ResourceManager.GetString("set_gbUser", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Passwort (testpw) ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_lblCertPassword() As String
+            Get
+                Return ResourceManager.GetString("set_lblCertPassword", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Land / Staat ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_lblCountry() As String
+            Get
+                Return ResourceManager.GetString("set_lblCountry", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die E-Mail ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_lblEmail() As String
+            Get
+                Return ResourceManager.GetString("set_lblEmail", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die OpenSSL Pfad ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_lblOpenSSL() As String
+            Get
+                Return ResourceManager.GetString("set_lblOpenSSL", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Organisation ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_lblOrganisation() As String
+            Get
+                Return ResourceManager.GetString("set_lblOrganisation", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Abteilung ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_lblOrgUnit() As String
+            Get
+                Return ResourceManager.GetString("set_lblOrgUnit", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Passwort ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_lblPassword() As String
+            Get
+                Return ResourceManager.GetString("set_lblPassword", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Bundesland / Bezirk ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_lblState() As String
+            Get
+                Return ResourceManager.GetString("set_lblState", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Adresse 1 ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_lblStreet1() As String
+            Get
+                Return ResourceManager.GetString("set_lblStreet1", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Adresse 2 ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_lblStreet2() As String
+            Get
+                Return ResourceManager.GetString("set_lblStreet2", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Adresse 3 ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_lblStreet3() As String
+            Get
+                Return ResourceManager.GetString("set_lblStreet3", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Ort ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_lblTown() As String
+            Get
+                Return ResourceManager.GetString("set_lblTown", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Für {0} sind max {1} Zeichen erlaubt. Aktuelle Länge {2} ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_maxChar() As String
+            Get
+                Return ResourceManager.GetString("set_maxChar", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Leeres Passwort nicht erlaubt ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_msgBlankPassword() As String
+            Get
+                Return ResourceManager.GetString("set_msgBlankPassword", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Bitte passen Sie die Länge des aktuellen Feldes an die vorgaben an. ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_msgLostFocus() As String
+            Get
+                Return ResourceManager.GetString("set_msgLostFocus", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Die erlaubte Länge für {0} ist max {1} Zeichen. ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_msgMaxChar() As String
+            Get
+                Return ResourceManager.GetString("set_msgMaxChar", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Produktiv ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_rbProductive() As String
+            Get
+                Return ResourceManager.GetString("set_rbProductive", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Test ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_rbTest() As String
+            Get
+                Return ResourceManager.GetString("set_rbTest", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Einstellungen ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property set_Title() As String
+            Get
+                Return ResourceManager.GetString("set_Title", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Zertifikat ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property ste_gbCertificate() As String
+            Get
+                Return ResourceManager.GetString("ste_gbCertificate", resourceCulture)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Sucht eine lokalisierte Zeichenfolge, die Postleitzahl ähnelt.
+        '''</summary>
+        Friend Shared ReadOnly Property ste_lblZip() As String
+            Get
+                Return ResourceManager.GetString("ste_lblZip", resourceCulture)
             End Get
         End Property
     End Class

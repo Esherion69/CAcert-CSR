@@ -53,18 +53,19 @@ Partial Class frmInit
         Me.gbServer = New System.Windows.Forms.GroupBox()
         Me.rbTest = New System.Windows.Forms.RadioButton()
         Me.rbProd = New System.Windows.Forms.RadioButton()
-        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox3 = New System.Windows.Forms.GroupBox()
-        Me.GroupBox4 = New System.Windows.Forms.GroupBox()
+        Me.gbAddress = New System.Windows.Forms.GroupBox()
+        Me.gbOpenSSL = New System.Windows.Forms.GroupBox()
+        Me.gbUser = New System.Windows.Forms.GroupBox()
         Me.btnExtend = New System.Windows.Forms.Button()
-        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
+        Me.gbCertificate = New System.Windows.Forms.GroupBox()
         Me.txtCertPass = New System.Windows.Forms.TextBox()
         Me.lblCertPass = New System.Windows.Forms.Label()
+        Me.lblInfo = New System.Windows.Forms.Label()
         Me.gbServer.SuspendLayout()
-        Me.GroupBox2.SuspendLayout()
-        Me.GroupBox3.SuspendLayout()
-        Me.GroupBox4.SuspendLayout()
-        Me.GroupBox5.SuspendLayout()
+        Me.gbAddress.SuspendLayout()
+        Me.gbOpenSSL.SuspendLayout()
+        Me.gbUser.SuspendLayout()
+        Me.gbCertificate.SuspendLayout()
         Me.SuspendLayout()
         '
         'lblSSL
@@ -85,7 +86,7 @@ Partial Class frmInit
         '
         'btnOK
         '
-        Me.btnOK.Location = New System.Drawing.Point(487, 511)
+        Me.btnOK.Location = New System.Drawing.Point(487, 539)
         Me.btnOK.Name = "btnOK"
         Me.btnOK.Size = New System.Drawing.Size(83, 23)
         Me.btnOK.TabIndex = 26
@@ -290,7 +291,7 @@ Partial Class frmInit
         Me.gbServer.BackColor = System.Drawing.Color.Lime
         Me.gbServer.Controls.Add(Me.rbTest)
         Me.gbServer.Controls.Add(Me.rbProd)
-        Me.gbServer.Location = New System.Drawing.Point(12, 326)
+        Me.gbServer.Location = New System.Drawing.Point(12, 354)
         Me.gbServer.Name = "gbServer"
         Me.gbServer.Size = New System.Drawing.Size(469, 48)
         Me.gbServer.TabIndex = 27
@@ -317,81 +318,82 @@ Partial Class frmInit
         Me.rbProd.Text = "Produktiv"
         Me.rbProd.UseVisualStyleBackColor = True
         '
-        'GroupBox2
+        'gbAddress
         '
-        Me.GroupBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.GroupBox2.Controls.Add(Me.txtPlz)
-        Me.GroupBox2.Controls.Add(Me.txtAdr3)
-        Me.GroupBox2.Controls.Add(Me.txtAdr2)
-        Me.GroupBox2.Controls.Add(Me.txtAdr1)
-        Me.GroupBox2.Controls.Add(Me.lblPlz)
-        Me.GroupBox2.Controls.Add(Me.lblAdr3)
-        Me.GroupBox2.Controls.Add(Me.lblAdr2)
-        Me.GroupBox2.Controls.Add(Me.lblAdr1)
-        Me.GroupBox2.Controls.Add(Me.txtDep)
-        Me.GroupBox2.Controls.Add(Me.txtOrg)
-        Me.GroupBox2.Controls.Add(Me.txtCity)
-        Me.GroupBox2.Controls.Add(Me.lblDep)
-        Me.GroupBox2.Controls.Add(Me.lblOrg)
-        Me.GroupBox2.Controls.Add(Me.lblCity)
-        Me.GroupBox2.Controls.Add(Me.txtState)
-        Me.GroupBox2.Controls.Add(Me.lblState)
-        Me.GroupBox2.Controls.Add(Me.txtCountry)
-        Me.GroupBox2.Controls.Add(Me.lblCountry)
-        Me.GroupBox2.Location = New System.Drawing.Point(12, 66)
-        Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(469, 254)
-        Me.GroupBox2.TabIndex = 28
-        Me.GroupBox2.TabStop = False
-        Me.GroupBox2.Text = "Adresse"
+        Me.gbAddress.BackColor = System.Drawing.Color.FromArgb(CType(CType(192, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.gbAddress.Controls.Add(Me.lblInfo)
+        Me.gbAddress.Controls.Add(Me.txtPlz)
+        Me.gbAddress.Controls.Add(Me.txtAdr3)
+        Me.gbAddress.Controls.Add(Me.txtAdr2)
+        Me.gbAddress.Controls.Add(Me.txtAdr1)
+        Me.gbAddress.Controls.Add(Me.lblPlz)
+        Me.gbAddress.Controls.Add(Me.lblAdr3)
+        Me.gbAddress.Controls.Add(Me.lblAdr2)
+        Me.gbAddress.Controls.Add(Me.lblAdr1)
+        Me.gbAddress.Controls.Add(Me.txtDep)
+        Me.gbAddress.Controls.Add(Me.txtOrg)
+        Me.gbAddress.Controls.Add(Me.txtCity)
+        Me.gbAddress.Controls.Add(Me.lblDep)
+        Me.gbAddress.Controls.Add(Me.lblOrg)
+        Me.gbAddress.Controls.Add(Me.lblCity)
+        Me.gbAddress.Controls.Add(Me.txtState)
+        Me.gbAddress.Controls.Add(Me.lblState)
+        Me.gbAddress.Controls.Add(Me.txtCountry)
+        Me.gbAddress.Controls.Add(Me.lblCountry)
+        Me.gbAddress.Location = New System.Drawing.Point(12, 66)
+        Me.gbAddress.Name = "gbAddress"
+        Me.gbAddress.Size = New System.Drawing.Size(469, 282)
+        Me.gbAddress.TabIndex = 28
+        Me.gbAddress.TabStop = False
+        Me.gbAddress.Text = "Adresse"
         '
-        'GroupBox3
+        'gbOpenSSL
         '
-        Me.GroupBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.GroupBox3.Controls.Add(Me.txtSSL)
-        Me.GroupBox3.Controls.Add(Me.lblSSL)
-        Me.GroupBox3.Location = New System.Drawing.Point(12, 12)
-        Me.GroupBox3.Name = "GroupBox3"
-        Me.GroupBox3.Size = New System.Drawing.Size(469, 48)
-        Me.GroupBox3.TabIndex = 29
-        Me.GroupBox3.TabStop = False
-        Me.GroupBox3.Text = "openSSL"
+        Me.gbOpenSSL.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.gbOpenSSL.Controls.Add(Me.txtSSL)
+        Me.gbOpenSSL.Controls.Add(Me.lblSSL)
+        Me.gbOpenSSL.Location = New System.Drawing.Point(12, 12)
+        Me.gbOpenSSL.Name = "gbOpenSSL"
+        Me.gbOpenSSL.Size = New System.Drawing.Size(469, 48)
+        Me.gbOpenSSL.TabIndex = 29
+        Me.gbOpenSSL.TabStop = False
+        Me.gbOpenSSL.Text = "openSSL"
         '
-        'GroupBox4
+        'gbUser
         '
-        Me.GroupBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.GroupBox4.Controls.Add(Me.txtPass)
-        Me.GroupBox4.Controls.Add(Me.lblPass)
-        Me.GroupBox4.Controls.Add(Me.txtMail)
-        Me.GroupBox4.Controls.Add(Me.lblMail)
-        Me.GroupBox4.Location = New System.Drawing.Point(12, 389)
-        Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(469, 88)
-        Me.GroupBox4.TabIndex = 30
-        Me.GroupBox4.TabStop = False
-        Me.GroupBox4.Text = "Benutzer"
+        Me.gbUser.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.gbUser.Controls.Add(Me.txtPass)
+        Me.gbUser.Controls.Add(Me.lblPass)
+        Me.gbUser.Controls.Add(Me.txtMail)
+        Me.gbUser.Controls.Add(Me.lblMail)
+        Me.gbUser.Location = New System.Drawing.Point(12, 417)
+        Me.gbUser.Name = "gbUser"
+        Me.gbUser.Size = New System.Drawing.Size(469, 88)
+        Me.gbUser.TabIndex = 30
+        Me.gbUser.TabStop = False
+        Me.gbUser.Text = "Benutzer"
         '
         'btnExtend
         '
         Me.btnExtend.BackColor = System.Drawing.Color.Lime
-        Me.btnExtend.Location = New System.Drawing.Point(487, 326)
+        Me.btnExtend.Location = New System.Drawing.Point(487, 354)
         Me.btnExtend.Name = "btnExtend"
         Me.btnExtend.Size = New System.Drawing.Size(83, 23)
         Me.btnExtend.TabIndex = 31
         Me.btnExtend.Text = "Erweitert"
         Me.btnExtend.UseVisualStyleBackColor = False
         '
-        'GroupBox5
+        'gbCertificate
         '
-        Me.GroupBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
-        Me.GroupBox5.Controls.Add(Me.txtCertPass)
-        Me.GroupBox5.Controls.Add(Me.lblCertPass)
-        Me.GroupBox5.Location = New System.Drawing.Point(12, 484)
-        Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(469, 50)
-        Me.GroupBox5.TabIndex = 32
-        Me.GroupBox5.TabStop = False
-        Me.GroupBox5.Text = "Zertfikat"
+        Me.gbCertificate.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
+        Me.gbCertificate.Controls.Add(Me.txtCertPass)
+        Me.gbCertificate.Controls.Add(Me.lblCertPass)
+        Me.gbCertificate.Location = New System.Drawing.Point(12, 512)
+        Me.gbCertificate.Name = "gbCertificate"
+        Me.gbCertificate.Size = New System.Drawing.Size(469, 50)
+        Me.gbCertificate.TabIndex = 32
+        Me.gbCertificate.TabStop = False
+        Me.gbCertificate.Text = "Zertfikat"
         '
         'txtCertPass
         '
@@ -412,17 +414,26 @@ Partial Class frmInit
         Me.lblCertPass.TabIndex = 24
         Me.lblCertPass.Text = "Passwort (testpw)"
         '
+        'lblInfo
+        '
+        Me.lblInfo.AutoSize = True
+        Me.lblInfo.Location = New System.Drawing.Point(116, 252)
+        Me.lblInfo.Name = "lblInfo"
+        Me.lblInfo.Size = New System.Drawing.Size(39, 13)
+        Me.lblInfo.TabIndex = 20
+        Me.lblInfo.Text = "Label1"
+        '
         'frmInit
         '
         Me.AcceptButton = Me.btnOK
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(577, 546)
-        Me.Controls.Add(Me.GroupBox5)
+        Me.ClientSize = New System.Drawing.Size(577, 564)
+        Me.Controls.Add(Me.gbCertificate)
         Me.Controls.Add(Me.btnExtend)
-        Me.Controls.Add(Me.GroupBox4)
-        Me.Controls.Add(Me.GroupBox3)
-        Me.Controls.Add(Me.GroupBox2)
+        Me.Controls.Add(Me.gbUser)
+        Me.Controls.Add(Me.gbOpenSSL)
+        Me.Controls.Add(Me.gbAddress)
         Me.Controls.Add(Me.gbServer)
         Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.btnOK)
@@ -431,14 +442,14 @@ Partial Class frmInit
         Me.Text = "Einstellungen"
         Me.gbServer.ResumeLayout(False)
         Me.gbServer.PerformLayout()
-        Me.GroupBox2.ResumeLayout(False)
-        Me.GroupBox2.PerformLayout()
-        Me.GroupBox3.ResumeLayout(False)
-        Me.GroupBox3.PerformLayout()
-        Me.GroupBox4.ResumeLayout(False)
-        Me.GroupBox4.PerformLayout()
-        Me.GroupBox5.ResumeLayout(False)
-        Me.GroupBox5.PerformLayout()
+        Me.gbAddress.ResumeLayout(False)
+        Me.gbAddress.PerformLayout()
+        Me.gbOpenSSL.ResumeLayout(False)
+        Me.gbOpenSSL.PerformLayout()
+        Me.gbUser.ResumeLayout(False)
+        Me.gbUser.PerformLayout()
+        Me.gbCertificate.ResumeLayout(False)
+        Me.gbCertificate.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -472,11 +483,12 @@ Partial Class frmInit
     Friend WithEvents gbServer As System.Windows.Forms.GroupBox
     Friend WithEvents rbTest As System.Windows.Forms.RadioButton
     Friend WithEvents rbProd As System.Windows.Forms.RadioButton
-    Friend WithEvents GroupBox2 As System.Windows.Forms.GroupBox
-    Friend WithEvents GroupBox3 As System.Windows.Forms.GroupBox
-    Friend WithEvents GroupBox4 As System.Windows.Forms.GroupBox
+    Friend WithEvents gbAddress As System.Windows.Forms.GroupBox
+    Friend WithEvents gbOpenSSL As System.Windows.Forms.GroupBox
+    Friend WithEvents gbUser As System.Windows.Forms.GroupBox
     Friend WithEvents btnExtend As System.Windows.Forms.Button
-    Friend WithEvents GroupBox5 As GroupBox
+    Friend WithEvents gbCertificate As GroupBox
     Friend WithEvents txtCertPass As TextBox
     Friend WithEvents lblCertPass As Label
+    Friend WithEvents lblInfo As System.Windows.Forms.Label
 End Class

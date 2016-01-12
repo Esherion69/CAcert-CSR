@@ -269,4 +269,85 @@
   <data name="msgTitleError" xml:space="preserve">
     <value>Error</value>
   </data>
+  <data name="btnSearch" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="btnExtend" xml:space="preserve">
+    <value>Extend</value>
+  </data>
+  <data name="set_Title" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="set_gbOpenSSL" xml:space="preserve">
+    <value>OpenSSL</value>
+  </data>
+  <data name="set_lblOpenSSL" xml:space="preserve">
+    <value>OpenSSL path</value>
+  </data>
+  <data name="set_gbAddress" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="set_lblOrganisation" xml:space="preserve">
+    <value>Organisation</value>
+  </data>
+  <data name="set_lblOrgUnit" xml:space="preserve">
+    <value>Organisation unit</value>
+  </data>
+  <data name="set_lblStreet1" xml:space="preserve">
+    <value>Address 1</value>
+  </data>
+  <data name="set_lblStreet2" xml:space="preserve">
+    <value>Address 2</value>
+  </data>
+  <data name="set_lblStreet3" xml:space="preserve">
+    <value>Address 3</value>
+  </data>
+  <data name="ste_lblZip" xml:space="preserve">
+    <value>Zip code</value>
+  </data>
+  <data name="set_lblTown" xml:space="preserve">
+    <value>Town</value>
+  </data>
+  <data name="set_lblState" xml:space="preserve">
+    <value>State / county</value>
+  </data>
+  <data name="set_lblCountry" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="set_gbEnvironment" xml:space="preserve">
+    <value>Server environment</value>
+  </data>
+  <data name="set_rbProductive" xml:space="preserve">
+    <value>Productive</value>
+  </data>
+  <data name="set_rbTest" xml:space="preserve">
+    <value>Test</value>
+  </data>
+  <data name="set_gbUser" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="set_lblEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="set_lblPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="set_msgBlankPassword" xml:space="preserve">
+    <value>Blank Password not allowed</value>
+  </data>
+  <data name="ste_gbCertificate" xml:space="preserve">
+    <value>Certificate</value>
+  </data>
+  <data name="set_lblCertPassword" xml:space="preserve">
+    <value>Password (testpw)</value>
+  </data>
+  <data name="set_maxChar" xml:space="preserve">
+    <value>Max {1} characters are allowed for {0}. Current length {2}</value>
+  </data>
+  <data name="set_msgMaxChar" xml:space="preserve">
+    <value>The allowed length of {0} is max  {1} characters.</value>
+  </data>
+  <data name="set_msgLostFocus" xml:space="preserve">
+    <value>Please adjust the length of the current field to the requirements.</value>
+  </data>
 </root>
